@@ -126,7 +126,6 @@ GameObject:
   - component: {fileID: 52505154}
   - component: {fileID: 52505153}
   - component: {fileID: 52505152}
-  - component: {fileID: 52505151}
   - component: {fileID: 52505150}
   m_Layer: 0
   m_Name: retry
@@ -167,17 +166,6 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
---- !u!122 &52505151
-Halo:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 52505149}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190335
-  m_Size: 0.25
 --- !u!114 &52505152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +212,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fcb635dcfb0f3124a8306e91a153bb88, type: 2}
+  - {fileID: 2100000, guid: b22e6a8ecf8f5b0488090ffbecc119e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
