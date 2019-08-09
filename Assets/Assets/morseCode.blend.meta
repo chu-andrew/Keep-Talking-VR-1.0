@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: cea974202eae9b048b57b745d5eccd01
+timeCreated: 1562823492
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cube
+    100002: Cube_001
+    100004: Cube_002
+    100006: Cube_003
+    100008: Cylinder
+    100010: Cylinder_001
+    100012: Cylinder_002
+    100014: Cylinder_007
+    100016: //RootNode
+    100018: NurbsCircle
+    100020: NurbsCircle_001
+    100022: NurbsPath
+    100024: NurbsPath_001
+    100026: Text_005
+    100028: Text_007
+    100030: Text_012
+    400000: Cube
+    400002: Cube_001
+    400004: Cube_002
+    400006: Cube_003
+    400008: Cylinder
+    400010: Cylinder_001
+    400012: Cylinder_002
+    400014: Cylinder_007
+    400016: //RootNode
+    400018: NurbsCircle
+    400020: NurbsCircle_001
+    400022: NurbsPath
+    400024: NurbsPath_001
+    400026: Text_005
+    400028: Text_007
+    400030: Text_012
+    2100000: unnamed
+    2100002: Material_001
+    2100004: Material_004
+    2100006: Material_000
+    2300000: Cube
+    2300002: Cube_001
+    2300004: Cube_002
+    2300006: Cube_003
+    2300008: Cylinder
+    2300010: Cylinder_001
+    2300012: Cylinder_002
+    2300014: Cylinder_007
+    2300016: NurbsCircle
+    2300018: NurbsCircle_001
+    2300020: NurbsPath
+    2300022: NurbsPath_001
+    2300024: Text_005
+    2300026: Text_007
+    2300028: Text_012
+    3300000: Cube
+    3300002: Cube_001
+    3300004: Cube_002
+    3300006: Cube_003
+    3300008: Cylinder
+    3300010: Cylinder_001
+    3300012: Cylinder_002
+    3300014: Cylinder_007
+    3300016: NurbsCircle
+    3300018: NurbsCircle_001
+    3300020: NurbsPath
+    3300022: NurbsPath_001
+    3300024: Text_005
+    3300026: Text_007
+    3300028: Text_012
+    4300000: Cylinder_001
+    4300002: NurbsCircle
+    4300004: NurbsPath
+    4300006: Cylinder
+    4300008: Cube_002
+    4300010: Cube_003
+    4300012: NurbsCircle_001
+    4300014: NurbsPath_001
+    4300016: Cube_001
+    4300018: Text_005
+    4300020: Cube
+    4300022: Cylinder_002
+    4300024: Cylinder_007
+    4300026: Text_007
+    4300028: Text_012
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
