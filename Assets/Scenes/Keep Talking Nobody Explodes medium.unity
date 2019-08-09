@@ -1924,7 +1924,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f211a2282d8466447859c84a5f7785f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hide: {fileID: 297436685}
 --- !u!95 &297436687
 Animator:
   serializedVersion: 3
@@ -4051,11 +4050,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4889006941770400, guid: afa6b3866b0eb3c43baa56d7a9483f0a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.416
+      value: 0.911
       objectReference: {fileID: 0}
     - target: {fileID: 4889006941770400, guid: afa6b3866b0eb3c43baa56d7a9483f0a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -8.339
+      value: -8.148
       objectReference: {fileID: 0}
     - target: {fileID: 4889006941770400, guid: afa6b3866b0eb3c43baa56d7a9483f0a, type: 2}
       propertyPath: m_LocalRotation.x
