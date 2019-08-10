@@ -19,6 +19,7 @@ namespace VRTK
         IEnumerator ReturnPosition()
         {
             yield return new WaitForSeconds(4.0f);
+            transform.localEulerAngles = new Vector3(0, -90, 0);
             transform.position = new Vector3(0.06568187f, 1.486162f, -6.755465f);
             position = false;
         }
