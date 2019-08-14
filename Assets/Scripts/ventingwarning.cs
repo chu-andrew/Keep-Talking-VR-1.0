@@ -7,9 +7,12 @@ public class ventingwarning : MonoBehaviour {
     public static int chooseText = 0;
     public static bool delay = true;
     private bool startTimer = false;
+    public AudioClip beepClip;
+    public AudioSource beep;
     // Use this for initialization
     void Start () {
         delay = true;
+        beep.clip = beepClip;
     }
 
     // Update is called once per frame
@@ -22,9 +25,10 @@ public class ventingwarning : MonoBehaviour {
     }
     IEnumerator WarnVent()
     {
-        while(ventingcountdown.mainVentTimer >0)
+        while(ventingcountdown.mainVentTimer > 0)
         {
             yield return new WaitForSeconds(Random.Range(30, 50));
+            beep.Play();
             delay = false;
             chooseText = Random.Range(1,3);
             Debug.Log(chooseText);
