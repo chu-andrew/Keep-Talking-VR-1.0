@@ -10,13 +10,13 @@ EditorBuildSettings:
     guid: 318a73e5c8e32d34db4f6e02ca244802
   - enabled: 1
     path: Assets/Scenes/Keep Talking Nobody Explodes hard.unity
-    guid: bb516c0beb23a3449bea2ed06f820ec1
+    guid: 136ffcf0873d31443b9b4e7ae4838e65
   - enabled: 1
     path: Assets/Scenes/Keep Talking Nobody Explodes easy.unity
-    guid: fb031c105b781774d811efb6aeb66583
+    guid: e5047d2a6bd84834790f08824848a981
   - enabled: 1
     path: Assets/Scenes/Keep Talking Nobody Explodes medium.unity
-    guid: 61e3d94fc88b04449ba058cba54f2e4d
+    guid: 00ad6865352577744a47512421f45d9b
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 3f5b527eede483a4aa23aa77d1328f41

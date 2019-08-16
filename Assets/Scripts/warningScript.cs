@@ -19,7 +19,8 @@ public class warningScript : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        if(countdown.mainTimer <= 30 && !startSiren)
+        //for starting the siren warning, change maintimer <= 20 to set when siren starts
+        if(countdown.mainTimer <= 20 && !startSiren)
         {
             sirenSource.Play();
             startSiren = true;
@@ -28,9 +29,12 @@ public class warningScript : MonoBehaviour {
 	}
     IEnumerator flash()
     {
-        yield return new WaitForSeconds(0.5f);
-        GetComponent<Renderer>().material = newMaterialRef;
-        yield return new WaitForSeconds(1f);
-        GetComponent<Renderer>().material = ogMaterial;
+        while(countdown.mainTimer >= 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+            GetComponent<Renderer>().material = newMaterialRef;
+            yield return new WaitForSeconds(1f);
+            GetComponent<Renderer>().material = ogMaterial;
+        }
     }
 }
