@@ -247,6 +247,7 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 1, b: 0.8352941, a: 0}
   usingState: 0
+  positionOffsetTolerance: 0.4
 --- !u!114 &98875570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,7 +572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hmdObject: {fileID: 0}
-  hmdPosition: {x: 0, y: 0, z: 0}
   offsetFromHmd: {x: 0, y: 0, z: 0}
 --- !u!4 &503705933
 Transform:
@@ -1001,6 +1001,7 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 1, b: 0.8352941, a: 0}
   usingState: 0
+  positionOffsetTolerance: 0.4
 --- !u!114 &606628455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1269,6 +1270,7 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 1, b: 0.83448267, a: 0}
   usingState: 0
+  positionOffsetTolerance: 0.02
 --- !u!114 &790283623
 MonoBehaviour:
   m_ObjectHideFlags: 0
