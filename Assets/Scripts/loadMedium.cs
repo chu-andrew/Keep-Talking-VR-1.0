@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace VRTK
@@ -14,11 +14,12 @@ namespace VRTK
         protected override void Update()
         {
             base.Update();
-            if (transform.position != new Vector3(-0.517f, 0.1703442f, -0.21f) && !IsGrabbed() && !position)
-            {
-                StartCoroutine(ReturnPosition());
-                position = true;
-            }
+            /* Delete the code to make the cube not being forcely placed in fix position*/
+            //if (transform.position != new Vector3(-0.517f, 0.1703442f, -0.21f) && !IsGrabbed() && !position)
+            //{
+            //    StartCoroutine(ReturnPosition());
+            //    position = true;
+            //}
         }
         IEnumerator ReturnPosition()
         {
