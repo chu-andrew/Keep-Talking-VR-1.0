@@ -11,6 +11,8 @@ TO INSTALL:
 6. Select the extracted folder
 7. Open it in the projects window
 
+Everything in the scripts folder was written by myself.
+
 TO PLAY:
 
 1. Use an oculus or HTC vive headset, and open the executable file
