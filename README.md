@@ -17,3 +17,5 @@ TO PLAY:
 2. Make sure your headset is compatible with SteamVR
 
 Use the bomb defusal manual in this project to defuse the modules in the game.
+
+There is also a demo video of the game showing how the game works in VR.
