@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRTK.Examples;
+using Assets.LSL4Unity.Scripts;
+
 namespace VRTK.Examples
 {
     public class sixwires2 : VRTK_InteractableObject
@@ -11,9 +13,12 @@ namespace VRTK.Examples
         public GameObject wire6;
         public int choose6wires2;
         public List<Color> colors;
+        private LSLMarkerStream marker;
         private bool colorChosen = false;
         // Use this for initialization
-        void Start() { }
+        void Start() {
+            marker = FindObjectOfType<LSLMarkerStream>();
+        }
 
         // Update is called once per frame
         protected override void Update()
@@ -103,6 +108,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
+            marker.Write("second wire (6 wires)" + " cut at ", Time.time);
             if (myObject.GetComponent<sixwires1>().scenario6wires == 1)
             {
                 mistakes.mistakeNum += 1;

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.LSL4Unity.Scripts;
+
 namespace VRTK.Examples
 {
     public class keypad3press : VRTK_InteractableObject
@@ -9,16 +11,19 @@ namespace VRTK.Examples
         public bool press3; // if the object is pressed or not
         public AudioClip soundEffect;
         public AudioSource source;
+        private LSLMarkerStream marker;
         // Use this for initialization
         void Start()
         {
             source.clip = soundEffect; // sets sound effect
+            marker = FindObjectOfType<LSLMarkerStream>();
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null) // runs when the object is used, or when the controller is touching the object (keypad button) and is pressed (function adds onto the base VRTK library startUsing function)
         {
             base.StartUsing(currentUsingObject);
             source.Play(); // plays sound
             press3 = true; // public boolean press3 is true
+            marker.Write("keypad button 3" + " pressed at ", Time.time);
         }
 
         public override void StopUsing(VRTK_InteractUse previousUsingObject = null, bool resetUsingObjectState = true) // when the trigger button is released after using the object (function adds onto the base VRTK library stopUsing function)

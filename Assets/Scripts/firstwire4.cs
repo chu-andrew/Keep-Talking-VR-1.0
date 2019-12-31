@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.LSL4Unity.Scripts;
 
 namespace VRTK.Examples
 {
@@ -14,6 +15,7 @@ namespace VRTK.Examples
         public int redNum = 0;
         public int randomRed1;
         public int randomYellow1;
+        private LSLMarkerStream marker;
         public int randomYellow2;
         public int randomRed2;
         public GameObject wire;
@@ -22,6 +24,7 @@ namespace VRTK.Examples
         // Use this for initialization
         void Start()
         {
+            marker = FindObjectOfType<LSLMarkerStream>();
             randomRed1 = Random.Range(1, 5);
             randomRed2 = Random.Range(1, 5);
             if (randomRed1 == randomRed2)
@@ -226,6 +229,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
+            marker.Write("first wire (4 wires)" + " cut at ", Time.time);
             if (scenario4wires == 1)
             {
                 mistakes.mistakeNum += 1;

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.LSL4Unity.Scripts;
+
 namespace VRTK.Examples
 {
     using UnityEngine;
@@ -10,15 +12,18 @@ namespace VRTK.Examples
         public List<Color> greenList;
         public GameObject myObject;
         public AudioClip soundEffect;
+        private LSLMarkerStream marker;
         public AudioSource source;
         private void Start()
         {
             source.clip = soundEffect;
+            marker = FindObjectOfType<LSLMarkerStream>();
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             source.Play();
             base.StartUsing(currentUsingObject);
+            marker.Write("green simon says button" + " pressed at ", Time.time);
             //transform.Translate(0, 0, -Time.deltaTime);
             if (!myObject.GetComponent<SimonSaysModule>().round1)
             {

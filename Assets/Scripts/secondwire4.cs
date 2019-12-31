@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRTK.Examples;
+using Assets.LSL4Unity.Scripts;
 
 namespace VRTK.Examples
 {
@@ -13,10 +14,12 @@ namespace VRTK.Examples
         public List<Color> colors;
         public static int choose4wires1;
         private bool colorChosen = false;
+        private LSLMarkerStream marker;
+
         // Use this for initialization
         void Start()
         {
-
+            marker = FindObjectOfType<LSLMarkerStream>();
         }
 
         // Update is called once per frame
@@ -226,6 +229,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
+            marker.Write("second wire (4 wires)" + " cut at ", Time.time);
             if (myObject.GetComponent<firstwire4>().scenario4wires == 1)
             {
                 if (thirdwire4.choose4wires1 != 0 && fourthwire4.choose4wires1 != 0 && choose4wires1 == 0)

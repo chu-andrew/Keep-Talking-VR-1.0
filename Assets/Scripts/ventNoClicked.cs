@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.LSL4Unity.Scripts;
+
 namespace VRTK.Examples
 {
     public class ventNoClicked : VRTK_InteractableObject
@@ -8,15 +10,18 @@ namespace VRTK.Examples
         // Use this for initialization
         public AudioClip soundEffect;
         public AudioSource source;
+        private LSLMarkerStream marker;
 
         public static bool isPressed = false;
         void Start()
         {
             source.clip = soundEffect;
+            marker = FindObjectOfType<LSLMarkerStream>();
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
+            marker.Write("venting gas no button" + " pressed at ", Time.time);
             source.Play();
             if (ventingwarning.chooseText == 1)
             {

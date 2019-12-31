@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.LSL4Unity.Scripts;
+
 namespace VRTK.Examples
 {
     using UnityEngine;
@@ -9,6 +11,8 @@ namespace VRTK.Examples
         public AudioSource source;
         public List<Color> colors;
         private int choose;
+        private string color;
+        private LSLMarkerStream marker;
         private bool blue;
         private bool red;
         private bool yellow;
@@ -16,8 +20,6 @@ namespace VRTK.Examples
         private bool isPressed;
         public bool clear = false;
         private bool wrong;
-
-
         // Use this for initialization
         static bool isDigitPresent(int x, int d)
         {
@@ -36,6 +38,7 @@ namespace VRTK.Examples
 
         void Start()
         {
+            marker = FindObjectOfType<LSLMarkerStream>();
             source.clip = soundEffect;
             if (colors.Count > 0)
             {
@@ -48,23 +51,29 @@ namespace VRTK.Examples
             {
                 case 0:
                     blue = true;
+                    color = "blue";
                     break;
                 case 1:
                     red = true;
+                    color = "red";
                     break;
                 case 2:
                     white = true;
+                    color = "white";
                     break;
                 case 3:
                     yellow = true;
+                    color = "yellow";
                     break;
                 default:
                     break;
             }
+
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
+            marker.Write(color +" button" + " pressed at ", Time.time);
             source.Play();
             transform.Translate(0, 0, -Time.deltaTime);
             isPressed = true;

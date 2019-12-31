@@ -36,55 +36,55 @@ public class wire6instantiate : MonoBehaviour
         if (stop == 0 && randomizeModules.chooseModule1 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.824992f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.620987f, -6.8525f), rotation, parentObject);
             stop = 1;
         }
         if (stop1 == 0 && randomizeModules.chooseModule2 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.824992f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.620987f, -6.8525f), rotation, parentObject);
             stop1 = 1;
         }
         if (stop2 == 0 && randomizeModules.chooseModule3 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(0.1862211f, 1.824992f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(0.1862211f, 1.620987f, -6.8525f), rotation, parentObject);
             stop2 = 1;
         }
         if (stop3 == 0 && randomizeModules.chooseModule4 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.704242f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.500238f, -6.8525f), rotation, parentObject);
             stop3 = 1;
         }
         if (stop4 == 0 && randomizeModules.chooseModule5 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.704242f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.500238f, -6.8525f), rotation, parentObject);
             stop4 = 1;
         }
         if (stop5 == 0 && randomizeModules.chooseModule6 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(0.1862211f, 1.704242f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(0.1862211f, 1.500238f, -6.8525f), rotation, parentObject);
             stop5 = 1;
         }
         if (stop6 == 0 && randomizeModules.chooseModule7 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.576242f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.372238f, -6.8525f), rotation, parentObject);
             stop6 = 1;
         }
         if (stop7 == 0 && randomizeModules.chooseModule8 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.576242f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.372238f, -6.8525f), rotation, parentObject);
             stop7 = 1;
         }
         if (stop8 == 0 && randomizeModules.chooseModule9 == 4)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(0.1862212f, 1.576242f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(0.1862212f, 1.372238f, -6.8525f), rotation, parentObject);
             stop8 = 1;
         }
     }

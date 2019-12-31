@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.LSL4Unity.Scripts;
+
 namespace VRTK.Examples
 {
     public class keypad1press : VRTK_InteractableObject
@@ -8,17 +10,20 @@ namespace VRTK.Examples
         public GameObject myObject;
         public AudioClip soundEffect;
         public AudioSource source;
+        private LSLMarkerStream marker;
         public bool press1;
         // Use this for initialization
         void Start()
         {
             source.clip = soundEffect;
+            marker = FindObjectOfType<LSLMarkerStream>();
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
             source.Play();
             press1 = true;
+            marker.Write("keypad button 1" + " pressed at ", Time.time);
             //transform.Translate(Time.deltaTime, 0, 0);
         }
 

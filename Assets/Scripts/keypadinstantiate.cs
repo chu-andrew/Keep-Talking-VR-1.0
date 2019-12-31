@@ -33,47 +33,47 @@ public class keypadinstantiate : MonoBehaviour {
     {
         if (stop == 0 && randomizeModules.chooseModule1 == 7)
         {
-            transform.position = new Vector3(-0.07127906f, 1.824992f, -6.8525f);
+            transform.position = new Vector3(-0.07127906f, 1.620987f, -6.8525f);
             stop = 1;
         }
         if (stop1 == 0 && randomizeModules.chooseModule2 == 7)
         {
-            transform.position = new Vector3(0.05622103f, 1.824992f, -6.8525f);
+            transform.position = new Vector3(0.05622103f, 1.620987f, -6.8525f);
             stop1 = 1;
         }
         if (stop2 == 0 && randomizeModules.chooseModule3 == 7)
         {
-            transform.position = new Vector3(0.1862211f, 1.824992f, -6.8525f);
+            transform.position = new Vector3(0.1862211f, 1.620987f, -6.8525f);
             stop2 = 1;
         }
         if (stop3 == 0 && randomizeModules.chooseModule4 == 7)
         {
-            transform.position = new Vector3(-0.07127906f, 1.704242f, -6.8525f);
+            transform.position = new Vector3(-0.07127906f, 1.500238f, -6.8525f);
             stop3 = 1;
         }
         if (stop4 == 0 && randomizeModules.chooseModule5 == 7)
         {
-            transform.position = new Vector3(0.05622103f, 1.704242f, -6.8525f);
+            transform.position = new Vector3(0.05622103f, 1.500238f, -6.8525f);
             stop4 = 1;
         }
         if (stop5 == 0 && randomizeModules.chooseModule6 == 7)
         {
-            transform.position = new Vector3(0.1862211f, 1.704242f, -6.8525f);
+            transform.position = new Vector3(0.1862211f, 1.500238f, -6.8525f);
             stop5 = 1;
         }
         if (stop6 == 0 && randomizeModules.chooseModule7 == 7)
         {
-            transform.position = new Vector3(-0.07127906f, 1.576242f, -6.8525f);
+            transform.position = new Vector3(-0.07127906f, 1.372238f, -6.8525f);
             stop6 = 1;
         }
         if (stop7 == 0 && randomizeModules.chooseModule8 == 7)
         {
-            transform.position = new Vector3(0.05622103f, 1.576242f, -6.8525f);
+            transform.position = new Vector3(0.05622103f, 1.372238f, -6.8525f);
             stop7 = 1;
         }
         if (stop8 == 0 && randomizeModules.chooseModule9 == 7)
         {
-            transform.position = new Vector3(0.1862212f, 1.576242f, -6.8525f);
+            transform.position = new Vector3(0.1862212f, 1.372238f, -6.8525f);
             stop8 = 1;
         }
     }

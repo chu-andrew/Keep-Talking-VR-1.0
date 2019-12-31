@@ -4602,6 +4602,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myObject: {fileID: 1953682597}
   gamesymbol1: {fileID: 678736662}
+--- !u!1001 &688662372
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.064453125
+      objectReference: {fileID: 0}
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.4711914
+      objectReference: {fileID: 0}
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.3828125
+      objectReference: {fileID: 0}
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458706, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 341f3d812511a334eb88d59274891c3a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &726468516
 GameObject:
   m_ObjectHideFlags: 0
@@ -7393,7 +7435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 011ea4494a1001d45a7d19ce759732e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableWhenIdle: 0
+  disableWhenIdle: 1
   allowedNearTouchControllers: 0
   allowedTouchControllers: 0
   ignoredColliders: []
@@ -10972,6 +11014,7 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
+  positionOffsetTolerance: 0
 --- !u!54 &1507913519
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11028,7 +11071,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1507913517}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.13499999, y: 3.5080109, z: 0.24799919}
+  m_LocalPosition: {x: -0.13499999, y: 2.676104, z: 0.24799919}
   m_LocalScale: {x: 0.25000036, y: 0.25, z: 0.25000036}
   m_Children:
   - {fileID: 289956719}
