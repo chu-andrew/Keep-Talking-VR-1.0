@@ -23,7 +23,7 @@ namespace VRTK.Examples
         {
             source.Play();
             base.StartUsing(currentUsingObject);
-            marker.Write("green simon says button" + " pressed at ", Time.time);
+            marker.Write("green simon says button pressed at ");
             //transform.Translate(0, 0, -Time.deltaTime);
             if (!myObject.GetComponent<SimonSaysModule>().round1)
             {

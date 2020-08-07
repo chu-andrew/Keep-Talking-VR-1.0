@@ -73,7 +73,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write(color +" button" + " pressed at ", Time.time);
+            marker.Write(color +" button pressed at ");
             source.Play();
             transform.Translate(0, 0, -Time.deltaTime);
             isPressed = true;

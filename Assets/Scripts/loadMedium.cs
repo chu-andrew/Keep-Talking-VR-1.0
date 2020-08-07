@@ -10,10 +10,12 @@ namespace VRTK
         private LSLMarkerStream marker;
         private bool position = false;
         private Vector3 originalPosition;
+        private bool pressed;
         private Quaternion originalRotation;
         public float positionOffsetTolerance;
         private void Start()
         {
+            pressed = false;
             marker = FindObjectOfType<LSLMarkerStream>();
             originalPosition = this.transform.localPosition;
             originalRotation = this.transform.localRotation;
@@ -22,7 +24,11 @@ namespace VRTK
         {
             base.StartUsing(currentUsingObject);
             SteamVR_LoadLevel.Begin("Keep Talking Nobody Explodes medium");
-            marker.Write(this.name + " pressed at ", Time.time);
+            if(!pressed)
+            {
+                marker.Write(this.name + " pressed at ");
+                pressed = true;
+            }
         }
         protected override void Update()
         {

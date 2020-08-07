@@ -199,7 +199,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("fifth wire (5 wires)" + " cut at ", Time.time);
+            marker.Write("fifth wire (5 wires) cut ");
             if (myObject.GetComponent<firstwire5>().scenario5wires == 1)
             {
                 mistakes.mistakeNum += 1;

@@ -126,6 +126,7 @@ public class randomizeModules : MonoBehaviour {
                         chooseModule9 = 7;
                         break;
                 }
+                /*
                 Debug.Log(chooseModule1);
                 Debug.Log(chooseModule2);
                 Debug.Log(chooseModule3);
@@ -135,6 +136,7 @@ public class randomizeModules : MonoBehaviour {
                 Debug.Log(chooseModule7);
                 Debug.Log(chooseModule8);
                 Debug.Log(chooseModule9);
+                */
             }
             if (switchCamera.difficulty == 2)
             {
@@ -308,6 +310,86 @@ public class randomizeModules : MonoBehaviour {
                 Debug.Log(chooseModule7);
                 Debug.Log(chooseModule8);
                 Debug.Log(chooseModule9);
+            }
+            if(switchCamera.difficulty == 4)
+            {
+                i1 = Random.Range(1, 10);
+                if (i1 == 1)
+                {
+                    chooseModule1 = Random.Range(1, 7);
+                }
+                if (i1 == 2)
+                {
+                    chooseModule2 = Random.Range(1, 7);
+                }
+                if (i1 == 3)
+                {
+                    chooseModule3 = Random.Range(1, 7);
+                }
+                if (i1 == 4 )
+                {
+                    chooseModule4 = Random.Range(1, 7);
+                }
+                if (i1 == 5)
+                {
+                    chooseModule5 = Random.Range(1, 7);
+                }
+                if (i1 == 6)
+                {
+                    chooseModule6 = Random.Range(1, 7);
+                }
+                if (i1 == 7)
+                {
+                    chooseModule7 = Random.Range(1, 7);
+                }
+                if (i1 == 8)
+                {
+                    chooseModule8 = Random.Range(1, 7);
+                }
+                if (i1 == 9)
+                {
+                    chooseModule9 = Random.Range(1, 7);
+                }
+            }
+            if (switchCamera.difficulty == 5)
+            {
+                i1 = Random.Range(1, 10);
+                if (i1 == 1)
+                {
+                    chooseModule1 = Random.Range(1, 7);
+                }
+                if (i1 == 2)
+                {
+                    chooseModule2 = Random.Range(1, 7);
+                }
+                if (i1 == 3)
+                {
+                    chooseModule3 = Random.Range(1, 7);
+                }
+                if (i1 == 4)
+                {
+                    chooseModule4 = Random.Range(1, 7);
+                }
+                if (i1 == 5)
+                {
+                    chooseModule5 = Random.Range(1, 7);
+                }
+                if (i1 == 6)
+                {
+                    chooseModule6 = Random.Range(1, 7);
+                }
+                if (i1 == 7)
+                {
+                    chooseModule7 = Random.Range(1, 7);
+                }
+                if (i1 == 8)
+                {
+                    chooseModule8 = Random.Range(1, 7);
+                }
+                if (i1 == 9)
+                {
+                    chooseModule9 = Random.Range(1, 7);
+                }
             }
             choseModules = true;
         }

@@ -128,7 +128,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("third wire (6 wires)" + " cut at ", Time.time);
+            marker.Write("third wire (6 wires) cut at");
             if (myObject.GetComponent<sixwires1>().scenario6wires == 1)
             {
                 clear.GetComponent<wire6clear>().clearwire6 = true;

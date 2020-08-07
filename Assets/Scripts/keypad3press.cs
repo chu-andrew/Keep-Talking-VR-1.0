@@ -23,7 +23,7 @@ namespace VRTK.Examples
             base.StartUsing(currentUsingObject);
             source.Play(); // plays sound
             press3 = true; // public boolean press3 is true
-            marker.Write("keypad button 3" + " pressed at ", Time.time);
+            marker.Write("keypad button 3 pressed at ");
         }
 
         public override void StopUsing(VRTK_InteractUse previousUsingObject = null, bool resetUsingObjectState = true) // when the trigger button is released after using the object (function adds onto the base VRTK library stopUsing function)

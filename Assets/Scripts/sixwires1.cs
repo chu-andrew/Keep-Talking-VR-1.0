@@ -123,7 +123,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("first wire (6 wires)" + " cut at ", Time.time);
+            marker.Write("first wire (6 wires) cut at ");
             if (scenario6wires == 1)
             {
                 mistakes.mistakeNum += 1;

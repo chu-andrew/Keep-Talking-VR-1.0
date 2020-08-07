@@ -18,6 +18,7 @@ namespace VRTK
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
+            Debug.Log("clicked");
             base.StartUsing(currentUsingObject);
             SteamVR_LoadLevel.Begin("Start Scene");
         }

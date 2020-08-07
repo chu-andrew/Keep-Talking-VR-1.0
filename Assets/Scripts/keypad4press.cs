@@ -24,7 +24,7 @@ namespace VRTK.Examples
             base.StartUsing(currentUsingObject);
             source.Play();
             press4 = true;
-            marker.Write("keypad button 4" + " pressed at ", Time.time);
+            marker.Write("keypad button 4 pressed at ");
             //transform.Translate(Time.deltaTime, 0, 0);
         }
 

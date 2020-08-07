@@ -24,7 +24,7 @@ public class simon_solved_button : MonoBehaviour
     {
         if (myobject.GetComponent<randomtextures>().clear && !solved)
         {
-            marker.Write("button cleared at ", Time.time);
+            marker.Write("button cleared at ");
             Color x = turnGreenButton[1];
             GetComponent<MeshRenderer>().material.color = x;
             switchCamera.modulesSolved += 1;

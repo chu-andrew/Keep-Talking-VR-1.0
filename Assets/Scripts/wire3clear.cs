@@ -24,7 +24,7 @@ public class wire3clear : MonoBehaviour {
     {
         if (clearwire3 && !solved)
         {
-            marker.Write("wire 3 cleared at ", Time.time);
+            marker.Write("wire 3 cleared at ");
             Color x = turnGreenButton[1];
             GetComponent<MeshRenderer>().material.color = x;
             switchCamera.modulesSolved += 1;

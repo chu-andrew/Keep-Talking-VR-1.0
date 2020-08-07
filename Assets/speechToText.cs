@@ -24,9 +24,9 @@ public class speechToText : MonoBehaviour
             {
                 if(test.IndexOf(array[i])>=0)
                 {
-                    Debug.LogFormat("Dictation result: {0}", text);
+                   // Debug.LogFormat("Dictation result: {0}", text);
                     m_Recognitions.text = text + "\n";
-                    Debug.Log(timer);
+                   // Debug.Log(timer);
                     break;
                 }
             }
@@ -34,9 +34,9 @@ public class speechToText : MonoBehaviour
 
         m_DictationRecognizer.DictationHypothesis += (text) =>
         {
-            Debug.LogFormat("Dictation hypothesis: {0}", text);
+            //Debug.LogFormat("Dictation hypothesis: {0}", text);
             m_Hypotheses.text = text;
-            Debug.Log(timer);
+            //Debug.Log(timer);
         };
 
         m_DictationRecognizer.DictationComplete += (completionCause) =>

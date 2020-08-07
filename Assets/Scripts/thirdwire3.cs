@@ -45,28 +45,13 @@ namespace VRTK.Examples
                 {
                     choose3wires3 = 0;
                     Color c = colors[choose3wires3];
-
                     GetComponent<Renderer>().material.color = c;
                 }
                 else
                 {
-                    if (secondwire3.blue2 != 1 || myObject.GetComponent<firstwire3>().blue != 1)
-                    {
-                        choose3wires3 = 4;
-                        Color b = colors[choose3wires3];
-                        GetComponent<Renderer>().material.color = b;
-                    }
-                    else
-                    {
-                        choose3wires3 = 3;
-                        while (choose3wires3 == 3)
-                        {
-                            choose3wires3 = Random.Range(0, colors.Count);
-                        }
-                        Color c = colors[choose3wires3];
-
-                        GetComponent<Renderer>().material.color = c;
-                    }
+                    choose3wires3 = 4;
+                    Color b = colors[choose3wires3];
+                    GetComponent<Renderer>().material.color = b;
                 }
             }
             if (myObject.GetComponent<firstwire3>().scenario3wires == 4 && colors.Count > 0 && !colorChosen)
@@ -129,7 +114,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("third wire (3 wires)" + " cut at ", Time.time);
+            marker.Write("third wire (3 wires) cut at ");
             if (myObject.GetComponent<firstwire3>().scenario3wires == 1)
             {
                 mistakes.mistakeNum += 1;

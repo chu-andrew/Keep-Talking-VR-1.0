@@ -72,7 +72,7 @@ public class simonsaysinstantiate : MonoBehaviour
         if (stop6 == 0 && randomizeModules.chooseModule7 == 6)
         {
             Quaternion rotation = Quaternion.Euler(0, -90, 0);
-            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.372238f, -6.8525f), rotation, parentObject);
+            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.372238f  , -6.8525f), rotation, parentObject);
             stop6 = 1;
         }
         if (stop7 == 0 && randomizeModules.chooseModule8 == 6)

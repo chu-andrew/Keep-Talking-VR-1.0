@@ -29,6 +29,14 @@ public class countdown : MonoBehaviour {
             {
                 mainTimer = 100;
             }
+            if(switchCamera.difficulty == 4)
+            {
+                mainTimer = 20;
+            }
+            if (switchCamera.difficulty == 5)
+            {
+                mainTimer = 120;
+            }
             StartCoroutine("LoseTime");
             startTimer = true;
         }

@@ -26,7 +26,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("red simon says button" + " pressed at ", Time.time);
+            marker.Write("red simon says button pressed at ");
             source.Play();
             //transform.Translate(0, 0, -Time.deltaTime);
             if (!myObject.GetComponent<SimonSaysModule>().round1)

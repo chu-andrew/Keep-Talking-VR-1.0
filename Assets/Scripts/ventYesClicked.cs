@@ -23,7 +23,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("venting gas yes button" + " pressed at ", Time.time);
+            marker.Write("venting gas yes button pressed at ");
             source.Play();
             if (ventingwarning.chooseText == 1)
             {

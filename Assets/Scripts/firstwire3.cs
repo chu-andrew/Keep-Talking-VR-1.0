@@ -10,7 +10,6 @@ namespace VRTK.Examples
     {
         public GameObject clear;
         public int scenario3wires;
-        public int blue;
         public int red;
         public GameObject first3wire;
         public int choose3wires1;
@@ -48,7 +47,6 @@ namespace VRTK.Examples
             }
             if (scenario3wires == 3 && colors.Count > 0)
             {
-                blue = Random.Range(1, 2);
                 if (red == 1)
                 {
                     choose3wires1 = 0;
@@ -58,19 +56,9 @@ namespace VRTK.Examples
                 }
                 else
                 {
-                    if (blue == 1)
-                    {
-                        choose3wires1 = 4;
-                        Color b = colors[choose3wires1];
-                        GetComponent<Renderer>().material.color = b;
-                    }
-                    else
-                    {
-                        choose3wires1 = Random.Range(0, 3);
-                        Color c = colors[choose3wires1];
-
-                        GetComponent<Renderer>().material.color = c;
-                    }
+                    choose3wires1 = 4;
+                    Color b = colors[choose3wires1];
+                    GetComponent<Renderer>().material.color = b;
                 }
             }
             if (scenario3wires == 4 && colors.Count > 0)
@@ -100,6 +88,7 @@ namespace VRTK.Examples
                     }
                 }
             }
+            Debug.Log("scenario: " + scenario3wires);
         }
         private void OnMouseDown()
         {
@@ -124,7 +113,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("first wire (3 wires)" + " cut at ", Time.time);
+            marker.Write("first wire (3 wires) cut at ");
             if (scenario3wires == 1)
             {
                 mistakes.mistakeNum += 1;

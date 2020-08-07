@@ -11,7 +11,6 @@ namespace VRTK.Examples
         public GameObject clear;
         public static int choose3wires2;
         public GameObject second3wire;
-        public static int blue2;
         private bool colorChosen = false;
         public List<Color> colors;
         private LSLMarkerStream marker;
@@ -51,7 +50,6 @@ namespace VRTK.Examples
             }
             if (myObject.GetComponent<firstwire3>().scenario3wires == 3 && colors.Count > 0 && !colorChosen)
             {
-                blue2 = Random.Range(1, 2);
                 if (myObject.GetComponent<firstwire3>().red == 2)
                 {
                     choose3wires2 = 0;
@@ -61,19 +59,9 @@ namespace VRTK.Examples
                 }
                 else
                 {
-                    if (blue2 == 1 || myObject.GetComponent<firstwire3>().blue != 1)
-                    {
-                        choose3wires2 = 4;
-                        Color b = colors[choose3wires2];
-                        GetComponent<Renderer>().material.color = b;
-                    }
-                    else
-                    {
-                        choose3wires2 = Random.Range(0, colors.Count);
-                        Color c = colors[choose3wires2];
-
-                        GetComponent<Renderer>().material.color = c;
-                    }
+                    choose3wires2 = 4;
+                    Color b = colors[choose3wires2];
+                    GetComponent<Renderer>().material.color = b;
                 }
             }
             if (myObject.GetComponent<firstwire3>().scenario3wires == 4 && colors.Count > 0 && !colorChosen)
@@ -132,7 +120,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            marker.Write("second wire (3 wires)" + " cut at ", Time.time);
+            marker.Write("second wire (3 wires) cut");
             if (myObject.GetComponent<firstwire3>().scenario3wires == 1)
             {
                 clear.GetComponent<wire3clear>().clearwire3 = true;

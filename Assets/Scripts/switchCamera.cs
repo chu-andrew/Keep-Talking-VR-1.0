@@ -3,18 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Assets.LSL4Unity.Scripts;
 
 public class switchCamera : MonoBehaviour {
     public static int difficulty = 0;
+    private LSLMarkerStream marker;
     public static int modulesSolved = 0;
     public AudioClip explosionClip;
     public AudioSource explosion;
     private Scene currentScene;
     private string sceneName;
+    private bool stop;
 
     void Start()
     {
+        stop = false;
         modulesSolved = 0;
+        marker = FindObjectOfType<LSLMarkerStream>();
         explosion.clip = explosionClip;
         currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
@@ -29,6 +34,14 @@ public class switchCamera : MonoBehaviour {
         if (sceneName == "Keep Talking Nobody Explodes hard")
         {
             difficulty = 3;
+        }
+        if(sceneName == "Keep Talking Nobody Explodes test")
+        {
+            difficulty = 4;
+        }
+        if (sceneName == "Keep Talking Nobody Explodes test 2")
+        {
+            difficulty = 5;
         }
     }
     private void destroyClones()
@@ -59,6 +72,7 @@ public class switchCamera : MonoBehaviour {
             destroyClones();
             SteamVR_LoadLevel.Begin("Win");
         }
+
         if (sceneName == "Keep Talking Nobody Explodes hard" && modulesSolved >= 8)
         {
             countdown.mainTimer = 100;
@@ -67,7 +81,20 @@ public class switchCamera : MonoBehaviour {
             destroyClones();
             SteamVR_LoadLevel.Begin("Win");
         }
-        if (mistakes.mistakeNum >= 3 || countdown.mainTimer <= 0 || ventingcountdown.mainVentTimer <= 0)
+        if (sceneName == "Keep Talking Nobody Explodes test" && modulesSolved >= 2)// greater than or equal to 2 modules so player cant win and skip session
+        {
+            countdown.mainTimer = 20;
+            destroyClones();
+            SteamVR_LoadLevel.Begin("Win");
+        }
+        if (sceneName == "Keep Talking Nobody Explodes test 2" && modulesSolved >= 2) // greater than or equal to 2 modules so player cant win and skip session
+        {
+            countdown.mainTimer = 120;
+            destroyClones();
+            SteamVR_LoadLevel.Begin("Win");
+        }
+        //if (mistakes.mistakeNum >= 3 || countdown.mainTimer <= 0 || ventingcountdown.mainVentTimer <= 0) for real game
+        if(countdown.mainTimer <= 0) //for experiment, so sessions are accurate
         {
             if (explosion.isPlaying == false)
             {
@@ -76,7 +103,19 @@ public class switchCamera : MonoBehaviour {
             destroyClones();
             ventingcountdown.mainVentTimer = 60.0f;
             ventingwarning.delay = true;
-            SteamVR_LoadLevel.Begin("Lose");
+            if (sceneName == "Keep Talking Nobody Explodes test 2" && !stop)
+            {
+                marker.Write("2 min test finished");
+                stop = true;
+                SteamVR_LoadLevel.Begin("Win");
+
+            }
+            else if (sceneName == "Keep Talking Nobody Explodes test" && !stop)
+            {
+                marker.Write("20 second test finished");
+                stop = true;
+                SteamVR_LoadLevel.Begin("Lose");
+            }
         }
     }
 }
