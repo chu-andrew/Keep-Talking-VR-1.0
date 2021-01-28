@@ -96,23 +96,23 @@ public class switchCamera : MonoBehaviour {
         //if (mistakes.mistakeNum >= 3 || countdown.mainTimer <= 0 || ventingcountdown.mainVentTimer <= 0) for real game
         if(countdown.mainTimer <= 0) //for experiment, so sessions are accurate
         {
-            if (explosion.isPlaying == false)
-            {
-                explosion.Play();
-            }
+            //if (explosion.isPlaying == false)
+            //{
+              //  explosion.Play();
+            //}
             destroyClones();
             ventingcountdown.mainVentTimer = 60.0f;
             ventingwarning.delay = true;
             if (sceneName == "Keep Talking Nobody Explodes test 2" && !stop)
             {
-                marker.Write("2 min test finished");
+                marker.Write("2 min end");
                 stop = true;
                 SteamVR_LoadLevel.Begin("Win");
 
             }
             else if (sceneName == "Keep Talking Nobody Explodes test" && !stop)
             {
-                marker.Write("20 second test finished");
+                marker.Write("20 sec end");
                 stop = true;
                 SteamVR_LoadLevel.Begin("Lose");
             }
