@@ -6,6 +6,8 @@ public class testCommit : MonoBehaviour {
 
     // this is a test commit to demonstrate github verion control
 
+    // this is a secondary test of github/git (11/06/2021)
+
 	// Use this for initialization
 	void Start () {
 		
