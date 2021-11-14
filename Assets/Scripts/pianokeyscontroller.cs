@@ -144,6 +144,7 @@ public class pianokeyscontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //this if-else if statement is repeated for all 4 keypad buttons
         if (keypad1.GetComponent<keypad1press>().press1 && i1 == ImageIndex[0]) // if keypad1 is pressed and its supposed to be the first one pressed
         {
@@ -238,7 +239,7 @@ public class pianokeyscontroller : MonoBehaviour
         }
         else if (keypad4.GetComponent<keypad4press>().press4)
         {
-            wrongkeypad = true;
+            wrongkey = true;
             pressed1 = false;
             pressed2 = false;
             pressed3 = false;

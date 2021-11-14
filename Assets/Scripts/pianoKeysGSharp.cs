@@ -5,7 +5,7 @@ using Assets.LSL4Unity.Scripts;
 
 namespace VRTK.Examples
 {
-    public class PianoKeys : VRTK_InteractableObject
+    public class pianoKeysGSharp : VRTK_InteractableObject
     {
         public GameObject myObject;
         public AudioClip soundEffect;
