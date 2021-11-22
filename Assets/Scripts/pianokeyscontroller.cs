@@ -6,23 +6,15 @@ using VRTK.Examples; // including vrtk library
 
 public class pianokeyscontroller : MonoBehaviour
 {
-
+    public int image;
 
     public bool wrongkey = false;
-    List<int> ImagePicker = new List<int>(); 
-    public int image1; 
-    public int image2;
-    public int image3;
-    public int image4;
-    private int i1; 
-    private int i2;
-    private int i3;
-    private int i4;
     private int picklist; 
-    private List<int> ImageIndex; 
     private bool[] pressed;
     public bool pianoClear = false; 
     public int numKeysPressed=0;
+    public string[] keyOrder;
+
 
     //these gameobjects are assigned to the keypad cubes in the game editor, in order for script to recognize if keypad is pressed or not
     public GameObject C;        
@@ -38,36 +30,21 @@ public class pianokeyscontroller : MonoBehaviour
     public GameObject ASharp;   
     public GameObject B;        
 
-    public string[] keyOrder;
 
     // This will make a list of all cards
-
-    int RandomImage()
-    {
-        // Return a bad card if the list wasn't made yet
-        if (ImagePicker == null) return -1;
-
-        // Return a bad card if the list is already empty
-        if (ImagePicker.Count <= 0) return -1;
-
-        // Return a random card that's left and remove it so we don't pick it again
-        int PickedImageIndex = UnityEngine.Random.Range(0, ImagePicker.Count);
-        int PickedImage = ImagePicker[PickedImageIndex];
-        ImagePicker.RemoveAt(PickedImageIndex);
-        return PickedImage;
-    }
+    
     void pickImage(int pickListInput)
     {
         switch (pickListInput)
         {// Chooses one out of six lists, and adds the image number needed for that lists
             case 1:
-                ImagePicker.Add(17);
+                image = 1;
                 keyOrder = new string[]{"A","B","C"}; //placeholder, change with notes
                 pressed = new bool[keyOrder.Length];
 
                 break;
             case 2:
-                ImagePicker.Add(2);
+                image = 2;
                 keyOrder = new string[]{"C","B","A"};
                 pressed = new bool[keyOrder.Length];
 
@@ -78,22 +55,8 @@ public class pianokeyscontroller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        picklist = UnityEngine.Random.Range(1, 7); //sets the integer used to pick the list to a random number between 1 and 6 
+        picklist = UnityEngine.Random.Range(1, 3); //sets the integer used to pick the list to a random number between 1 and 6 
         pickImage(picklist); //picks the list with the corresponding images
-        image1 = RandomImage(); // picks a random integer from the list created in the imagePicker
-        image2 = RandomImage();
-        image3 = RandomImage();
-        image4 = RandomImage();
-        ImagePicker.Clear(); // clears the list
-
-        pickImage(picklist);
-        i1 = ImagePicker.IndexOf(image1); // each image has an index, or order in which its supposed to go in, in its respective list
-        i2 = ImagePicker.IndexOf(image2); // i1, i2, i3, and i4 each correspond to the keypad buttons (called keypad 1, keypad 2, etc.) respectively
-        i3 = ImagePicker.IndexOf(image3);
-        i4 = ImagePicker.IndexOf(image4);
-        ImageIndex = new List<int> { i1, i2, i3, i4 }; //creates a new list with the image indexes
-        ImageIndex.Sort(); // makes sure the list is in increasing order (first button to be pressed is index 0, second is index 1, etc)
-        //Debug.Log(i1); testing purposes
     }
 
     // Update is called once per frame
