@@ -2644,6 +2644,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 433479984}
   m_Mesh: {fileID: 4300024, guid: c36bcc8ec954fc0439e5d0fda14d5e38, type: 3}
+--- !u!1 &435426400 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1125911480207890, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 676579275}
 --- !u!1 &487682071
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,7 +4104,7 @@ Prefab:
     - target: {fileID: 224882208652530838, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 827
+      value: 826
       objectReference: {fileID: 0}
     - target: {fileID: 224882208652530838, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
@@ -4130,32 +4135,32 @@ Prefab:
         type: 2}
       propertyPath: actualBoundaries
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2044709634}
     - target: {fileID: 114593311299088752, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: actualHeadset
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1440057601}
     - target: {fileID: 114593311299088752, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: actualLeftController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1348512272}
     - target: {fileID: 114593311299088752, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: actualRightController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 435426400}
     - target: {fileID: 114593311299088752, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: modelAliasLeftController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 772818631}
     - target: {fileID: 114593311299088752, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: modelAliasRightController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1625512363}
     - target: {fileID: 4263553784797674, guid: afa6b3866b0eb3c43baa56d7a9483f0a, type: 2}
       propertyPath: m_LocalPosition.z
       value: -0.35
@@ -4645,6 +4650,11 @@ Transform:
   m_Father: {fileID: 1507913521}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
+--- !u!1 &772818631 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1496960862438264, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 676579275}
 --- !u!1 &795084500
 GameObject:
   m_ObjectHideFlags: 0
@@ -9056,6 +9066,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myObject: {fileID: 1953682597}
   gamesymbol1: {fileID: 1334062913}
+--- !u!1 &1348512272 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1561192902215690, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 676579275}
 --- !u!1 &1352616631
 GameObject:
   m_ObjectHideFlags: 0
@@ -9836,6 +9851,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myObject: {fileID: 1953682597}
   gamesymbol1: {fileID: 1432758335}
+--- !u!1 &1440057601 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1040918684219568, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 676579275}
 --- !u!1 &1456506145
 GameObject:
   m_ObjectHideFlags: 0
@@ -11327,6 +11347,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1613616116}
   m_Mesh: {fileID: 4300004, guid: ac5dbecd0f31e464a967d5f149f47ec9, type: 3}
+--- !u!1 &1625512363 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1162331099121414, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 676579275}
 --- !u!1001 &1630265595
 Prefab:
   m_ObjectHideFlags: 0
@@ -13758,6 +13783,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043308677}
   m_Mesh: {fileID: 4300030, guid: d42e9986ff5eb3f46a54aa63bbe3eb34, type: 3}
+--- !u!1 &2044709634 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1897968819038914, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 676579275}
 --- !u!1 &2099019813
 GameObject:
   m_ObjectHideFlags: 0
