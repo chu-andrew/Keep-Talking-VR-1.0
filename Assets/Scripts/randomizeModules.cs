@@ -178,31 +178,31 @@ public class randomizeModules : MonoBehaviour {
                 switch (random2)
                 {
                     case 1:
-                        chooseModule1 = 8;
+                        chooseModule1 = 9;
                         break;
                     case 2:
-                        chooseModule2 = 8;
+                        chooseModule2 = 9;
                         break;
                     case 3:
-                        chooseModule3 = 8;
+                        chooseModule3 = 9;
                         break;
                     case 4:
-                        chooseModule4 = 8;
+                        chooseModule4 = 9;
                         break;
                     case 5:
-                        chooseModule5 = 8;
+                        chooseModule5 = 9;
                         break;
                     case 6:
-                        chooseModule6 = 8;
+                        chooseModule6 = 9;
                         break;
                     case 7:
-                        chooseModule7 = 8;
+                        chooseModule7 = 9;
                         break;
                     case 8:
-                        chooseModule8 = 8;
+                        chooseModule8 = 9;
                         break;
                     case 9:
-                        chooseModule9 = 8;
+                        chooseModule9 = 9;
                         break;
                 }
                 Debug.Log(chooseModule1);

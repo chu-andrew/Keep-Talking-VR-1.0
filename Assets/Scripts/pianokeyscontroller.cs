@@ -109,6 +109,7 @@ public class pianokeyscontroller : MonoBehaviour
                     pressed[i] = false;
                 }
                 numKeysPressed =0;
+                wrongkey = true;
             }
         }
         
@@ -121,6 +122,7 @@ public class pianokeyscontroller : MonoBehaviour
                     pressed[i] = false;
                 }
                 numKeysPressed =0;
+                wrongkey = true;
             }
         }
         
@@ -133,6 +135,7 @@ public class pianokeyscontroller : MonoBehaviour
                     pressed[i] = false;
                 }
                 numKeysPressed =0;
+                wrongkey = true;
             }
         }
         if (pressed[pressed.Length-1]) // if all 4 keypads are pressed in the right order, the keypad puzzle is complete
