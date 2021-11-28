@@ -11,7 +11,7 @@ namespace VRTK.Examples
         public AudioClip soundEffect;
         public AudioSource source;
         private LSLMarkerStream marker;
-        public bool press;
+        public bool pressA;
         // Use this for initialization
         void Start()
         {
@@ -22,7 +22,7 @@ namespace VRTK.Examples
         {
             base.StartUsing(currentUsingObject);
             source.Play();
-            press = true;
+            pressA = true;
             marker.Write("piano key A pressed");
             //transform.Translate(Time.deltaTime, 0, 0);
         }
@@ -30,7 +30,7 @@ namespace VRTK.Examples
         public override void StopUsing(VRTK_InteractUse previousUsingObject = null, bool resetUsingObjectState = true)
         {
             base.StopUsing(previousUsingObject, resetUsingObjectState);
-            press = false;
+            pressA = false;
             //transform.Translate(-Time.deltaTime, 0, 0);
             if (myObject.GetComponent<pianokeyscontroller>().wrongkey)
             {
@@ -40,12 +40,12 @@ namespace VRTK.Examples
         }
         private void OnMouseDown()
         {
-            press = true;
+            pressA = true;
             transform.Translate(0, 0, -Time.deltaTime);
         }
         void OnMouseUp()
         {
-            press = false;
+            pressA = false;
             transform.Translate(0, 0, Time.deltaTime);
             if (myObject.GetComponent<pianokeyscontroller>().wrongkey)
             {
