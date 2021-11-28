@@ -220,39 +220,39 @@ public class randomizeModules : MonoBehaviour {
                 i1 = Random.Range(1, 10);
                 if (i1 == 1)
                 {
-                    chooseModule1 = Random.Range(9, 10);
+                    chooseModule1 = Random.Range(7, 10);
                 }
                 if (i1 == 2)
                 {
-                    chooseModule2 = Random.Range(9, 10);
+                    chooseModule2 = Random.Range(7, 10);
                 }
                 if (i1 == 3)
                 {
-                    chooseModule3 = Random.Range(9, 10);
+                    chooseModule3 = Random.Range(7, 10);
                 }
                 if (i1 == 4 )
                 {
-                    chooseModule4 = Random.Range(9, 10);
+                    chooseModule4 = Random.Range(7, 10);
                 }
                 if (i1 == 5)
                 {
-                    chooseModule5 = Random.Range(9, 10);
+                    chooseModule5 = Random.Range(7, 10);
                 }
                 if (i1 == 6)
                 {
-                    chooseModule6 = Random.Range(9, 10);
+                    chooseModule6 = Random.Range(7, 10);
                 }
                 if (i1 == 7)
                 {
-                    chooseModule7 = Random.Range(9, 10);
+                    chooseModule7 = Random.Range(7, 10);
                 }
                 if (i1 == 8)
                 {
-                    chooseModule8 = Random.Range(9, 10);
+                    chooseModule8 = Random.Range(7, 10);
                 }
                 if (i1 == 9)
                 {
-                    chooseModule9 = Random.Range(9, 10);
+                    chooseModule9 = Random.Range(7, 10);
                 }
             }
             if (switchCamera.difficulty == 5)

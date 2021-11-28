@@ -31,7 +31,7 @@ public class countdown : MonoBehaviour {
             }
             if(switchCamera.difficulty == 4)
             {
-                mainTimer = 20;
+                mainTimer = 2000;
             }
             if (switchCamera.difficulty == 5)
             {
