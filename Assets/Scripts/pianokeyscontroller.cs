@@ -73,7 +73,7 @@ public class pianokeyscontroller : MonoBehaviour
     void Update()
     {
 
-        if (A.GetComponent<pianoKeysA>().pressA){
+        if (A.GetComponent<pianoKeysA>().press){
             if("A"==keyOrder[numKeysPressed]){
                 pressed[numKeysPressed] = true;
             }
