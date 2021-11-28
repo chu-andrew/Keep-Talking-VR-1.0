@@ -41,13 +41,11 @@ public class pianokeyscontroller : MonoBehaviour
                 image = 1;
                 keyOrder = new string[]{"A"}; //placeholder, change with notes
                 pressed = new bool[keyOrder.Length];
-
                 break;
             case 2:
                 image = 2;
                 keyOrder = new string[]{"A","B"};
                 pressed = new bool[keyOrder.Length];
-
                 break;
             case 3:
                 image = 3;
@@ -65,7 +63,7 @@ public class pianokeyscontroller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        picklist = UnityEngine.Random.Range(1, 3); //sets the integer used to pick the list to a random number between 1 and 6 
+        picklist = UnityEngine.Random.Range(1, 5); //sets the integer used to pick the list to a random number between 1 and 6 
         pickImage(picklist); //picks the list with the corresponding images
     }
 
@@ -86,7 +84,7 @@ public class pianokeyscontroller : MonoBehaviour
             }
         }
         
-        if (B.GetComponent<pianoKeysB>().press){
+        else if (B.GetComponent<pianoKeysB>().press){
             if("B"==keyOrder[numKeysPressed]){
                 pressed[numKeysPressed] = true;
             }
@@ -99,7 +97,7 @@ public class pianokeyscontroller : MonoBehaviour
             }
         }
         
-        if (C.GetComponent<pianoKeysC>().press){
+        else if (C.GetComponent<pianoKeysC>().press){
             if("C"==keyOrder[numKeysPressed]){
                 pressed[numKeysPressed] = true;
             }
@@ -112,7 +110,7 @@ public class pianokeyscontroller : MonoBehaviour
             }
         }
 
-        if (D.GetComponent<pianoKeysD>().press)
+        else if (D.GetComponent<pianoKeysD>().press)
         {
             if ("D" == keyOrder[numKeysPressed])
             {
