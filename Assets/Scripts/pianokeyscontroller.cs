@@ -81,7 +81,7 @@ public class pianokeyscontroller : MonoBehaviour
             Debug.Log(y);
         }
         */
-        if (A.GetComponent<pianoKeysA>().press){
+        if (A.GetComponent<pianoKeysA>().press && !pianoClear){
             if("A"==keyOrder[numKeysPressed]){
                 pressed[numKeysPressed] = true;
                 numKeysPressed++;
@@ -95,9 +95,11 @@ public class pianokeyscontroller : MonoBehaviour
             }
         }
         
-        else if (B.GetComponent<pianoKeysB>().press){
+        else if (B.GetComponent<pianoKeysB>().press && !pianoClear)
+        {
             if("B"==keyOrder[numKeysPressed]){
                 pressed[numKeysPressed] = true;
+                B.GetComponent<pianoKeysB>().press = false;
                 numKeysPressed++;
 
                 Debug.Log("pressed b correctly");
@@ -107,14 +109,15 @@ public class pianokeyscontroller : MonoBehaviour
                 for(int i=0;i<pressed.Length;i++){
                     pressed[i] = false;
                 }
-                numKeysPressed =0;
+                numKeysPressed = 0;
                 wrongkey = true;
                 Debug.Log("pressed b incorrectly");
             }
             Debug.Log("pressed b");
         }
         
-        else if (C.GetComponent<pianoKeysC>().press){
+        else if (C.GetComponent<pianoKeysC>().press && !pianoClear)
+        {
             if("C"==keyOrder[numKeysPressed]){
                 pressed[numKeysPressed] = true;
                 numKeysPressed++;
@@ -130,7 +133,7 @@ public class pianokeyscontroller : MonoBehaviour
             }
         }
 
-        else if (D.GetComponent<pianoKeysD>().press)
+        else if (D.GetComponent<pianoKeysD>().press && !pianoClear)
         {
             if ("D" == keyOrder[numKeysPressed])
             {
