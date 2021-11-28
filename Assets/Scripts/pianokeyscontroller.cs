@@ -39,15 +39,25 @@ public class pianokeyscontroller : MonoBehaviour
         {// Chooses one out of six lists, and adds the image number needed for that lists
             case 1:
                 image = 1;
-                keyOrder = new string[]{"A","B","C"}; //placeholder, change with notes
+                keyOrder = new string[]{"A"}; //placeholder, change with notes
                 pressed = new bool[keyOrder.Length];
 
                 break;
             case 2:
                 image = 2;
-                keyOrder = new string[]{"C","B","A"};
+                keyOrder = new string[]{"A","B"};
                 pressed = new bool[keyOrder.Length];
 
+                break;
+            case 3:
+                image = 3;
+                keyOrder = new string[] { "A", "B" ,"C"};
+                pressed = new bool[keyOrder.Length];
+                break;
+            case 4:
+                image = 4;
+                keyOrder = new string[] {"A","B","C","D" };
+                pressed = new bool[keyOrder.Length];
                 break;
         }
     }
@@ -101,6 +111,24 @@ public class pianokeyscontroller : MonoBehaviour
                 wrongkey = true;
             }
         }
+
+        if (D.GetComponent<pianoKeysD>().press)
+        {
+            if ("D" == keyOrder[numKeysPressed])
+            {
+                pressed[numKeysPressed] = true;
+            }
+            else
+            {
+                for (int i = 0; i < pressed.Length; i++)
+                {
+                    pressed[i] = false;
+                }
+                numKeysPressed = 0;
+                wrongkey = true;
+            }
+        }
+
         if (pressed[pressed.Length-1]) // if all 4 keypads are pressed in the right order, the keypad puzzle is complete
         {
             pianoClear = true;
