@@ -1038,16 +1038,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
-  press: 0
+  pressA: 0
 --- !u!114 &363694401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3101,16 +3101,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -3229,16 +3229,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -4122,16 +4122,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -10942,16 +10942,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -11551,16 +11551,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -12560,16 +12560,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -12779,16 +12779,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -13102,16 +13102,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -14071,16 +14071,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
@@ -14816,16 +14816,16 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 0}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
-  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 1, b: 0, a: 0}
   usingState: 0
-  myObject: {fileID: 0}
+  myObject: {fileID: 915453801}
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
