@@ -15,7 +15,7 @@ namespace VRTK.Examples
         // Use this for initialization
         void Start()
         {
-            source.clip = soundEffect;
+            // source.clip = soundEffect;
             marker = FindObjectOfType<LSLMarkerStream>();
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)

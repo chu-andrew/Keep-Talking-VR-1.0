@@ -22,7 +22,7 @@ public class TurnGreenPianoKeys : MonoBehaviour {
     {
         if (myObject.GetComponent<pianokeyscontroller>().pianoClear && !solved)
         {
-            marker.Write("keypad cleared at ", Time.time);
+            marker.Write("pianokeys cleared at ", Time.time);
             Color x = turnGreenPianoKeys[1];
             GetComponent<MeshRenderer>().material.color = x;
             switchCamera.modulesSolved += 1;

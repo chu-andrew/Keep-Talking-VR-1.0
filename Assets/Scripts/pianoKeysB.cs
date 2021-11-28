@@ -21,7 +21,7 @@ namespace VRTK.Examples
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            source.Play();
+            // source.Play();
             press = true;
             marker.Write("piano key B pressed");
             //transform.Translate(Time.deltaTime, 0, 0);
