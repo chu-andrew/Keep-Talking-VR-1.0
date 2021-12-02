@@ -1,4 +1,4 @@
-							using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.LSL4Unity.Scripts;
@@ -11,48 +11,48 @@ namespace VRTK.Examples
         public AudioClip soundEffect;
         public AudioSource source;
         private LSLMarkerStream marker;
-        public bool press;
+        public bool press = false;
+        public bool pressedInInstant = false;
+        public GameObject Controller;
+
         // Use this for initialization
         void Start()
         {
-            source.clip = soundEffect;
+            // source.clip = soundEffect;
             marker = FindObjectOfType<LSLMarkerStream>();
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            source.Play();
-            press = true;
-            marker.Write("piano key FSharp pressed");
-            //transform.Translate(Time.deltaTime, 0, 0);
+            // source.Play();
+            pressedInInstant = true;
         }
 
         public override void StopUsing(VRTK_InteractUse previousUsingObject = null, bool resetUsingObjectState = true)
         {
-            base.StopUsing(previousUsingObject, resetUsingObjectState);
-            press = false;
-            //transform.Translate(-Time.deltaTime, 0, 0);
-            if (myObject.GetComponent<pianokeyscontroller>().wrongkey)
+            if (pressedInInstant)
             {
-                mistakes.mistakeNum += 1;
-                myObject.GetComponent<pianokeyscontroller>().wrongkey = false;
+                Controller.GetComponent<pianokeyscontroller>().interrupted = true;
+                press = true;
+                marker.Write("piano key FSharp pressed");
+                //transform.Translate(Time.deltaTime, 0, 0);
+
+                pressedInInstant = false;
             }
-        }
-        private void OnMouseDown()
-        {
-            press = true;
-            transform.Translate(0, 0, -Time.deltaTime);
-        }
-        void OnMouseUp()
-        {
-            press = false;
-            transform.Translate(0, 0, Time.deltaTime);
-            if (myObject.GetComponent<pianokeyscontroller>().wrongkey)
+
+            else if (!pressedInInstant)
             {
-                mistakes.mistakeNum += 1;
-                myObject.GetComponent<pianokeyscontroller>().wrongkey = false;
+                base.StopUsing(previousUsingObject, resetUsingObjectState);
+                press = false;
+                //transform.Translate(-Time.deltaTime, 0, 0);
+                if (myObject.GetComponent<pianokeyscontroller>().wrongkey)
+                {
+                    mistakes.mistakeNum += 1;
+                    myObject.GetComponent<pianokeyscontroller>().wrongkey = false;
+                }
             }
         }
     }
 }
+
 

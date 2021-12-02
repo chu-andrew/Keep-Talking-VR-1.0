@@ -1,4 +1,4 @@
-							using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.LSL4Unity.Scripts;
@@ -12,17 +12,19 @@ namespace VRTK.Examples
         public AudioSource source;
         private LSLMarkerStream marker;
         public bool press = false;
-        public bool pressedInInstant=false;
+        public bool pressedInInstant = false;
+        public GameObject Controller;
 
         // Use this for initialization
         void Start()
         {
-            source.clip = soundEffect;
+            // source.clip = soundEffect;
             marker = FindObjectOfType<LSLMarkerStream>();
         }
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
+            // source.Play();
             pressedInInstant = true;
         }
 
@@ -30,7 +32,7 @@ namespace VRTK.Examples
         {
             if (pressedInInstant)
             {
-                // source.Play();
+                Controller.GetComponent<pianokeyscontroller>().interrupted = true;
                 press = true;
                 marker.Write("piano key B pressed");
                 //transform.Translate(Time.deltaTime, 0, 0);
@@ -52,4 +54,5 @@ namespace VRTK.Examples
         }
     }
 }
+
 

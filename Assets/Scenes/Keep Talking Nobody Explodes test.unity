@@ -1052,6 +1052,7 @@ MonoBehaviour:
   source: {fileID: 0}
   press: 0
   pressedInInstant: 0
+  Controller: {fileID: 915453801}
 --- !u!114 &163490267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2609,6 +2610,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 915453801}
 --- !u!114 &363694401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3115,6 +3118,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!65 &450913668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3243,6 +3248,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!114 &450940400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4136,6 +4143,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!114 &608119921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4932,7 +4941,7 @@ Prefab:
     - target: {fileID: 224882208652530838, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 574
+      value: 903
       objectReference: {fileID: 0}
     - target: {fileID: 224882208652530838, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
@@ -6659,6 +6668,7 @@ MonoBehaviour:
   pianoClear: 0
   numKeysPressed: 0
   keyOrder: []
+  interrupted: 0
   C: {fileID: 1562557862}
   CSharp: {fileID: 1783357878}
   D: {fileID: 1611561071}
@@ -10956,6 +10966,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!65 &1442673548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11565,6 +11577,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!114 &1507010667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12574,6 +12588,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 915453801}
 --- !u!114 &1562557864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12793,6 +12809,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!114 &1611561073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13116,6 +13134,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!114 &1623411441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14085,6 +14105,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!114 &1783357880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14830,6 +14852,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   source: {fileID: 0}
   press: 0
+  pressedInInstant: 0
+  Controller: {fileID: 0}
 --- !u!114 &1808074405
 MonoBehaviour:
   m_ObjectHideFlags: 0
