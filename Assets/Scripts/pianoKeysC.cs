@@ -36,7 +36,7 @@ namespace VRTK.Examples
                 press = true;
                 marker.Write("piano key C pressed");
                 //transform.Translate(Time.deltaTime, 0, 0);
-
+                SoundManagerScript.PlaySound("CPlayed");
                 pressedInInstant = false;
             }
 
