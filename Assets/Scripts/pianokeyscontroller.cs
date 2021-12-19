@@ -39,25 +39,31 @@ public class pianokeyscontroller : MonoBehaviour
         {// Chooses one out of six lists, and adds the image number needed for that lists
             case 1:
                 image = 1;
-                keyOrder = new string[] { "B", "B", "C" }; //placeholder, change with notes
+                keyOrder = new string[] { "ASharp", "ASharp", "ASharp", "ASharp", "FSharp", "GSharp", "ASharp", "BSharp", "ASharp" }; //placeholder, change with notes
                 pressed = new bool[keyOrder.Length];
                 break;
             case 2:
                 image = 2;
-                keyOrder = new string[] { "B", "B", "C" };
+                keyOrder = new string[] { "DSharp", "DSharp","D","D","DSharp","DSharp","D","DSharp","DSharp","D","D","DSharp" };
                 pressed = new bool[keyOrder.Length];
                 break;
             case 3:
                 image = 3;
-                keyOrder = new string[] { "B", "B", "C" };
+                keyOrder = new string[] { "G","G","C","G","G","C","G","C" };
                 pressed = new bool[keyOrder.Length];
                 break;
             case 4:
                 image = 4;
-                keyOrder = new string[] { "B", "B", "C" };
+                keyOrder = new string[] { "E","E","E","C","E","G","G" };
+                pressed = new bool[keyOrder.Length];
+                break;
+            case 5:
+                image = 5;
+                keyOrder = new string[] { "G","G","G","DSharp","ASharp","G","DSharp", "ASharp","G" };
                 pressed = new bool[keyOrder.Length];
                 break;
         }
+
         for (int i = 0; i < pressed.Length; i++)
         {
             pressed[i] = false;

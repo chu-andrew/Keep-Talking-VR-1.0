@@ -1126,8 +1126,8 @@ GameObject:
   - component: {fileID: 163490270}
   - component: {fileID: 163490269}
   - component: {fileID: 163490268}
-  - component: {fileID: 163490267}
   - component: {fileID: 163490266}
+  - component: {fileID: 163490267}
   m_Layer: 0
   m_Name: Cube.004
   m_TagString: Untagged
@@ -1177,21 +1177,22 @@ MonoBehaviour:
 --- !u!114 &163490267
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114182252707133324, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 163490265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &163490268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2685,8 +2686,8 @@ GameObject:
   - component: {fileID: 363694404}
   - component: {fileID: 363694403}
   - component: {fileID: 363694402}
-  - component: {fileID: 363694401}
   - component: {fileID: 363694400}
+  - component: {fileID: 363694401}
   m_Layer: 0
   m_Name: Cube.005
   m_TagString: Untagged
@@ -2736,21 +2737,22 @@ MonoBehaviour:
 --- !u!114 &363694401
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114953066991729300, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 363694399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &363694402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3175,8 +3177,8 @@ GameObject:
   - component: {fileID: 450913670}
   - component: {fileID: 450913669}
   - component: {fileID: 450913668}
-  - component: {fileID: 450913666}
   - component: {fileID: 450913667}
+  - component: {fileID: 450913666}
   m_Layer: 0
   m_Name: Cube.003
   m_TagString: Untagged
@@ -3187,21 +3189,22 @@ GameObject:
 --- !u!114 &450913666
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114644662258464016, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 450913665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!114 &450913667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3323,8 +3326,8 @@ GameObject:
   - component: {fileID: 450940403}
   - component: {fileID: 450940402}
   - component: {fileID: 450940401}
-  - component: {fileID: 450940400}
   - component: {fileID: 450940399}
+  - component: {fileID: 450940400}
   m_Layer: 0
   m_Name: Cube.008
   m_TagString: Untagged
@@ -3374,21 +3377,22 @@ MonoBehaviour:
 --- !u!114 &450940400
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114076845527111800, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 450940398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &450940401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4218,8 +4222,8 @@ GameObject:
   - component: {fileID: 608119924}
   - component: {fileID: 608119923}
   - component: {fileID: 608119922}
-  - component: {fileID: 608119921}
   - component: {fileID: 608119920}
+  - component: {fileID: 608119921}
   m_Layer: 0
   m_Name: Cube.002
   m_TagString: Untagged
@@ -4269,21 +4273,22 @@ MonoBehaviour:
 --- !u!114 &608119921
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114199243029607978, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 608119919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &608119922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5062,7 +5067,7 @@ Prefab:
     - target: {fileID: 224882208652530838, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 712
+      value: 901
       objectReference: {fileID: 0}
     - target: {fileID: 224882208652530838, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
         type: 2}
@@ -5608,6 +5613,88 @@ Transform:
   m_Father: {fileID: 1507913521}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
+--- !u!1 &768769077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 768769078}
+  - component: {fileID: 768769081}
+  - component: {fileID: 768769080}
+  - component: {fileID: 768769079}
+  m_Layer: 0
+  m_Name: pianokeysimage4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &768769078
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768769077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1614546622}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -29, y: 28}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &768769079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768769077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64072caa48906604d898500b5710534c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myObject: {fileID: 915453801}
+  pianoImage5: {fileID: 768769077}
+--- !u!114 &768769080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768769077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 250873d9672487a479bef4d2b312f0c3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &768769081
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768769077}
 --- !u!1 &772818631 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1496960862438264, guid: afa6b3866b0eb3c43baa56d7a9483f0a,
@@ -11023,8 +11110,8 @@ GameObject:
   - component: {fileID: 1442673550}
   - component: {fileID: 1442673549}
   - component: {fileID: 1442673548}
-  - component: {fileID: 1442673546}
   - component: {fileID: 1442673547}
+  - component: {fileID: 1442673546}
   m_Layer: 0
   m_Name: Cube.006
   m_TagString: Untagged
@@ -11035,21 +11122,22 @@ GameObject:
 --- !u!114 &1442673546
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114212922899279242, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1442673545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!114 &1442673547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11652,8 +11740,8 @@ GameObject:
   - component: {fileID: 1507010670}
   - component: {fileID: 1507010669}
   - component: {fileID: 1507010668}
-  - component: {fileID: 1507010667}
   - component: {fileID: 1507010666}
+  - component: {fileID: 1507010667}
   m_Layer: 0
   m_Name: Cube.009
   m_TagString: Untagged
@@ -11703,21 +11791,22 @@ MonoBehaviour:
 --- !u!114 &1507010667
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114330833630587876, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1507010665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &1507010668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12663,8 +12752,8 @@ GameObject:
   - component: {fileID: 1562557867}
   - component: {fileID: 1562557866}
   - component: {fileID: 1562557865}
-  - component: {fileID: 1562557864}
   - component: {fileID: 1562557863}
+  - component: {fileID: 1562557864}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
@@ -12714,21 +12803,22 @@ MonoBehaviour:
 --- !u!114 &1562557864
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114614324324764524, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1562557862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &1562557865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12884,8 +12974,8 @@ GameObject:
   - component: {fileID: 1611561076}
   - component: {fileID: 1611561075}
   - component: {fileID: 1611561074}
-  - component: {fileID: 1611561073}
   - component: {fileID: 1611561072}
+  - component: {fileID: 1611561073}
   m_Layer: 0
   m_Name: Cube.007
   m_TagString: Untagged
@@ -12935,21 +13025,22 @@ MonoBehaviour:
 --- !u!114 &1611561073
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114067040949250774, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1611561071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &1611561074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13129,6 +13220,7 @@ RectTransform:
   - {fileID: 2025134860}
   - {fileID: 1843041438}
   - {fileID: 267134289}
+  - {fileID: 768769078}
   m_Father: {fileID: 47293442}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -13209,8 +13301,8 @@ GameObject:
   - component: {fileID: 1623411444}
   - component: {fileID: 1623411443}
   - component: {fileID: 1623411442}
-  - component: {fileID: 1623411441}
   - component: {fileID: 1623411440}
+  - component: {fileID: 1623411441}
   m_Layer: 0
   m_Name: Cube.011
   m_TagString: Untagged
@@ -13260,21 +13352,22 @@ MonoBehaviour:
 --- !u!114 &1623411441
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114886351288410030, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1623411439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &1623411442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13363,11 +13456,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4937658990256834, guid: f5b47975207d2f949accf7c4d35e4ff2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.537
       objectReference: {fileID: 0}
     - target: {fileID: 4937658990256834, guid: f5b47975207d2f949accf7c4d35e4ff2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.872
       objectReference: {fileID: 0}
     - target: {fileID: 4937658990256834, guid: f5b47975207d2f949accf7c4d35e4ff2, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14180,8 +14273,8 @@ GameObject:
   - component: {fileID: 1783357883}
   - component: {fileID: 1783357882}
   - component: {fileID: 1783357881}
-  - component: {fileID: 1783357880}
   - component: {fileID: 1783357879}
+  - component: {fileID: 1783357880}
   m_Layer: 0
   m_Name: Cube.010
   m_TagString: Untagged
@@ -14231,21 +14324,22 @@ MonoBehaviour:
 --- !u!114 &1783357880
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114886484052113356, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1783357878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &1783357881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14927,8 +15021,8 @@ GameObject:
   - component: {fileID: 1808074408}
   - component: {fileID: 1808074407}
   - component: {fileID: 1808074406}
-  - component: {fileID: 1808074405}
   - component: {fileID: 1808074404}
+  - component: {fileID: 1808074405}
   m_Layer: 0
   m_Name: Cube.012
   m_TagString: Untagged
@@ -14978,21 +15072,22 @@ MonoBehaviour:
 --- !u!114 &1808074405
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114378103678088142, guid: c1c6da9f73021f949b89501db651d193,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808074403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08517e04830d6d44a13c5ea5f574181, type: 3}
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
-  unhighlightOnDisable: 1
-  thickness: 1
-  customOutlineModels: []
-  customOutlineModelPaths: []
-  enableSubmeshHighlight: 0
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!65 &1808074406
 BoxCollider:
   m_ObjectHideFlags: 0
