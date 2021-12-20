@@ -72,7 +72,7 @@ public class pianokeyscontroller : MonoBehaviour
     {
         //sets the integer used to pick the list to a random number between 1 and 6 
         //picks the list with the corresponding images
-        pickImage(UnityEngine.Random.Range(1, 5);
+        pickImage(UnityEngine.Random.Range(1, 5));
         foreach (string x in keyOrder)
         {
             Debug.Log(x + " ");
@@ -86,10 +86,11 @@ public class pianokeyscontroller : MonoBehaviour
         {
             if (A.GetComponent<pianoKeysA>().press)
             {
+                A.GetComponent<pianoKeysA>().press = false;
+
                 if ("A" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    A.GetComponent<pianoKeysA>().press = false;
                     numKeysPressed++;
                     Debug.Log("pressed a correctly");
                 }
@@ -100,17 +101,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed a incorrectly");
                 }
             }
 
             else if (ASharp.GetComponent<pianoKeysASharp>().press)
             {
+                ASharp.GetComponent<pianoKeysASharp>().press = false;
+
                 if ("ASharp" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    ASharp.GetComponent<pianoKeysASharp>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed asharp correctly");
@@ -122,7 +124,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
 
                     Debug.Log("pressed asharp incorrectly");
                 }
@@ -130,10 +132,11 @@ public class pianokeyscontroller : MonoBehaviour
 
             else if (B.GetComponent<pianoKeysB>().press)
             {
+                B.GetComponent<pianoKeysB>().press = false;
+
                 if ("B" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    B.GetComponent<pianoKeysB>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed b correctly");
@@ -145,7 +148,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     
                     Debug.Log("pressed b incorrectly");
                 }
@@ -153,10 +156,11 @@ public class pianokeyscontroller : MonoBehaviour
 
             else if (C.GetComponent<pianoKeysC>().press)
             {
+                C.GetComponent<pianoKeysC>().press = false;
+
                 if ("C" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    C.GetComponent<pianoKeysC>().press = false;
                     numKeysPressed++;
                     Debug.Log("pressed c correctly");
                 }
@@ -167,17 +171,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed c incorrectly");
                 }
             }
 
             else if (CSharp.GetComponent<pianoKeysCSharp>().press)
             {
+                CSharp.GetComponent<pianoKeysCSharp>().press = false;
+
                 if ("CSharp" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    CSharp.GetComponent<pianoKeysCSharp>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed csharp correctly");
@@ -189,17 +194,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed csharp incorrectly");
                 }
             }
 
             else if (D.GetComponent<pianoKeysD>().press)
             {
+                D.GetComponent<pianoKeysD>().press = false;
+
                 if ("D" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    D.GetComponent<pianoKeysD>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed d correctly");
@@ -211,17 +217,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed d incorrectly");
                 }
             }
 
             else if (DSharp.GetComponent<pianoKeysDSharp>().press)
             {
+                DSharp.GetComponent<pianoKeysDSharp>().press = false;
+
                 if ("DSharp" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    DSharp.GetComponent<pianoKeysDSharp>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed dsharp correctly");
@@ -233,17 +240,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed dsharp incorrectly");
                 }
             }
 
             else if (E.GetComponent<pianoKeysE>().press)
             {
+                E.GetComponent<pianoKeysE>().press = false;
+
                 if ("E" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    E.GetComponent<pianoKeysE>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed e correctly");
@@ -255,17 +263,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed e incorrectly");
                 }
             }
 
             else if (F.GetComponent<pianoKeysF>().press)
             {
+                F.GetComponent<pianoKeysF>().press = false;
+
                 if ("F" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    F.GetComponent<pianoKeysF>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed f correctly");
@@ -277,17 +286,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed f incorrectly");
                 }
             }
 
             else if (FSharp.GetComponent<pianoKeysFSharp>().press)
             {
+                FSharp.GetComponent<pianoKeysFSharp>().press = false;
+
                 if ("FSharp" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    FSharp.GetComponent<pianoKeysFSharp>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed fsharp correctly");
@@ -299,17 +309,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed fsharp incorrectly");
                 }
             }
 
             else if (G.GetComponent<pianoKeysG>().press)
             {
+                G.GetComponent<pianoKeysG>().press = false;
+
                 if ("G" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    G.GetComponent<pianoKeysG>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed g correctly");
@@ -321,17 +332,18 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed g incorrectly");
                 }
             }
 
             else if (GSharp.GetComponent<pianoKeysGSharp>().press)
             {
+                GSharp.GetComponent<pianoKeysGSharp>().press = false;
+
                 if ("GSharp" == keyOrder[numKeysPressed])
                 {
                     pressed[numKeysPressed] = true;
-                    GSharp.GetComponent<pianoKeysGSharp>().press = false;
                     numKeysPressed++;
 
                     Debug.Log("pressed gsharp correctly");
@@ -343,7 +355,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    mistake.mistakeNum++;
+                    mistakes.mistakeNum++;
                     Debug.Log("pressed gsharp incorrectly");
                 }
             }
