@@ -72,7 +72,7 @@ public class pianokeyscontroller : MonoBehaviour
     {
         //sets the integer used to pick the list to a random number between 1 and 6 
         //picks the list with the corresponding images
-        pickImage(UnityEngine.Random.Range(1, 5);); 
+        pickImage(UnityEngine.Random.Range(1, 5);
         foreach (string x in keyOrder)
         {
             Debug.Log(x + " ");
