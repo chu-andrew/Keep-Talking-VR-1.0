@@ -5,7 +5,7 @@ using Assets.LSL4Unity.Scripts;
 
 namespace VRTK.Examples
 {
-    public class pianoKeysCSharp : VRTK_InteractableObject
+    public class pianoKeysC : VRTK_InteractableObject
     {
         public GameObject myObject;
         public AudioClip soundEffect;
@@ -34,9 +34,9 @@ namespace VRTK.Examples
             {
                 Controller.GetComponent<pianokeyscontroller>().interrupted = true;
                 press = true;
-                marker.Write("piano key CSharp pressed");
+                marker.Write("piano key C pressed");
                 //transform.Translate(Time.deltaTime, 0, 0);
-                SoundManagerScript.PlaySound("CSharpPlayed");
+                SoundManagerScript.PlaySound("CPlayed");
                 pressedInInstant = false;
             }
 
@@ -45,14 +45,7 @@ namespace VRTK.Examples
                 base.StopUsing(previousUsingObject, resetUsingObjectState);
                 press = false;
                 //transform.Translate(-Time.deltaTime, 0, 0);
-                if (myObject.GetComponent<pianokeyscontroller>().wrongkey)
-                {
-                    mistakes.mistakeNum += 1;
-                    myObject.GetComponent<pianokeyscontroller>().wrongkey = false;
-                }
             }
         }
     }
 }
-
-

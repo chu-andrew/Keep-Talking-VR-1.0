@@ -7,9 +7,6 @@ using VRTK.Examples; // including vrtk library
 public class pianokeyscontroller : MonoBehaviour
 {
     public int image;
-
-    public bool wrongkey = false;
-    private int picklist;
     private bool[] pressed;
     public bool pianoClear = false;
     public int numKeysPressed = 0;
@@ -73,8 +70,9 @@ public class pianokeyscontroller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        picklist = UnityEngine.Random.Range(1, 5); //sets the integer used to pick the list to a random number between 1 and 6 
-        pickImage(picklist); //picks the list with the corresponding images
+        //sets the integer used to pick the list to a random number between 1 and 6 
+        //picks the list with the corresponding images
+        pickImage(UnityEngine.Random.Range(1, 5);); 
         foreach (string x in keyOrder)
         {
             Debug.Log(x + " ");
@@ -86,11 +84,6 @@ public class pianokeyscontroller : MonoBehaviour
     {
         if (interrupted && !pianoClear)
         {
-            /*
-            foreach (bool y in pressed) {
-                Debug.Log(y);
-            }
-            */
             if (A.GetComponent<pianoKeysA>().press)
             {
                 if ("A" == keyOrder[numKeysPressed])
@@ -98,7 +91,6 @@ public class pianokeyscontroller : MonoBehaviour
                     pressed[numKeysPressed] = true;
                     A.GetComponent<pianoKeysA>().press = false;
                     numKeysPressed++;
-
                     Debug.Log("pressed a correctly");
                 }
                 else
@@ -108,7 +100,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed a incorrectly");
                 }
             }
@@ -130,7 +122,8 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
+
                     Debug.Log("pressed asharp incorrectly");
                 }
             }
@@ -152,7 +145,8 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
+                    
                     Debug.Log("pressed b incorrectly");
                 }
             }
@@ -164,7 +158,6 @@ public class pianokeyscontroller : MonoBehaviour
                     pressed[numKeysPressed] = true;
                     C.GetComponent<pianoKeysC>().press = false;
                     numKeysPressed++;
-
                     Debug.Log("pressed c correctly");
                 }
                 else
@@ -174,7 +167,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed c incorrectly");
                 }
             }
@@ -196,7 +189,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed csharp incorrectly");
                 }
             }
@@ -218,7 +211,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed d incorrectly");
                 }
             }
@@ -240,7 +233,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed dsharp incorrectly");
                 }
             }
@@ -262,7 +255,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed e incorrectly");
                 }
             }
@@ -284,7 +277,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed f incorrectly");
                 }
             }
@@ -306,7 +299,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed fsharp incorrectly");
                 }
             }
@@ -328,7 +321,7 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed g incorrectly");
                 }
             }
@@ -350,19 +343,16 @@ public class pianokeyscontroller : MonoBehaviour
                         pressed[i] = false;
                     }
                     numKeysPressed = 0;
-                    wrongkey = true;
+                    mistake.mistakeNum++;
                     Debug.Log("pressed gsharp incorrectly");
                 }
             }
-
-
 
             if (pressed[pressed.Length - 1]) // if all 4 keypads are pressed in the right order, the keypad puzzle is complete
             {
                 pianoClear = true;
                 Debug.Log("pianoClear");
             }
-
             interrupted = false;
         }
     }

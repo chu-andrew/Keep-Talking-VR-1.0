@@ -45,14 +45,7 @@ namespace VRTK.Examples
                 base.StopUsing(previousUsingObject, resetUsingObjectState);
                 press = false;
                 //transform.Translate(-Time.deltaTime, 0, 0);
-                if (myObject.GetComponent<pianokeyscontroller>().wrongkey)
-                {
-                    mistakes.mistakeNum += 1;
-                    myObject.GetComponent<pianokeyscontroller>().wrongkey = false;
-                }
             }
         }
     }
 }
-
-
