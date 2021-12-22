@@ -6,7 +6,7 @@ using UnityEngine;
 public class pianoSymbol3 : MonoBehaviour
 {
     public GameObject myObject;
-    public GameObject pianoImage3;
+    //public GameObject pianoImage3;
     RectTransform m_RectTransform;
     // Use this for initialization
     void Start()
@@ -20,11 +20,11 @@ public class pianoSymbol3 : MonoBehaviour
         //Initiate the x and y positions
         if (myObject.GetComponent<pianokeyscontroller>().image == 3)
         {
-            pianoImage3.SetActive(true);
+            gameObject.SetActive(true);
         }
         else
         {
-            pianoImage3.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }

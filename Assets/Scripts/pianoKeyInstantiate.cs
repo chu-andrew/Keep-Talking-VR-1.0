@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class pianoKeyInstantiate : MonoBehaviour
 {
-
+    public GameObject prefab;
+    public Transform parentObject;
     public static int stop = 0;
     public static int stop1 = 0;
     public static int stop2 = 0;
@@ -13,8 +14,9 @@ public class pianoKeyInstantiate : MonoBehaviour
     public static int stop5 = 0;
     public static int stop6 = 0;
     public static int stop7 = 0;
-    public GameObject hide;
     public static int stop8 = 0;
+    Quaternion rotation = Quaternion.Euler(180, 0, 180);
+
 
     // Use this for initialization
     void Start()
@@ -30,63 +32,57 @@ public class pianoKeyInstantiate : MonoBehaviour
             stop6 = 0;
             stop7 = 0;
             stop8 = 0;
+            
         //}
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (switchCamera.difficulty == 4 || switchCamera.difficulty == 5)
+        if (stop == 0 && randomizeModules.chooseModule1 == 9)
         {
-            if (stop == 0 && randomizeModules.chooseModule1 == 9)
-            {
-                transform.position = new Vector3(-0.07127906f, 1.620987f, -6.8525f);
-                stop = 1;
-            }
-            if (stop1 == 0 && randomizeModules.chooseModule2 == 9)
-            {
-                transform.position = new Vector3(0.05622103f, 1.620987f, -6.8525f);
-                stop1 = 1;
-            }
-            if (stop2 == 0 && randomizeModules.chooseModule3 == 9)
-            {
-                transform.position = new Vector3(0.1862211f, 1.620987f, -6.8525f);
-                stop2 = 1;
-            }
-            if (stop3 == 0 && randomizeModules.chooseModule4 == 9)
-            {
-                transform.position = new Vector3(-0.07127906f, 1.500238f, -6.8525f);
-                stop3 = 1;
-            }
-            if (stop4 == 0 && randomizeModules.chooseModule5 == 9)
-            {
-                transform.position = new Vector3(0.05622103f, 1.500238f, -6.8525f);
-                stop4 = 1;
-            }
-            if (stop5 == 0 && randomizeModules.chooseModule6 == 9)
-            {
-                transform.position = new Vector3(0.1862211f, 1.500238f, -6.8525f);
-                stop5 = 1;
-            }
-            if (stop6 == 0 && randomizeModules.chooseModule7 == 9)
-            {
-                transform.position = new Vector3(-0.07127906f, 1.372238f, -6.8525f);
-                stop6 = 1;
-            }
-            if (stop7 == 0 && randomizeModules.chooseModule8 == 9)
-            {
-                transform.position = new Vector3(0.05622103f, 1.372238f, -6.8525f);
-                stop7 = 1;
-            }
-            if (stop8 == 0 && randomizeModules.chooseModule9 == 9)
-            {
-                transform.position = new Vector3(0.1862212f, 1.372238f, -6.8525f);
-                stop8 = 1;
-            }
+            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.620987f, -6.8525f), rotation, parentObject);
+            stop = 1;
         }
-        else
+        if (stop1 == 0 && randomizeModules.chooseModule2 == 9)
         {
-            hide.SetActive(false);
+            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.620987f, -6.8525f), rotation, parentObject);
+            stop1 = 1;
+        }
+        if (stop2 == 0 && randomizeModules.chooseModule3 == 9)
+        {
+            GameObject clone = Instantiate(prefab, new Vector3(0.1862211f, 1.620987f, -6.8525f), rotation, parentObject);
+            stop2 = 1;
+        }
+        if (stop3 == 0 && randomizeModules.chooseModule4 == 9)
+        {
+            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.500238f, -6.8525f), rotation, parentObject);
+            stop3 = 1;
+        }
+        if (stop4 == 0 && randomizeModules.chooseModule5 == 9)
+        {
+            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.500238f, -6.8525f), rotation, parentObject);
+            stop4 = 1;
+        }
+        if (stop5 == 0 && randomizeModules.chooseModule6 == 9)
+        {
+            GameObject clone = Instantiate(prefab, new Vector3(0.1862211f, 1.500238f, -6.8525f), rotation, parentObject);
+            stop5 = 1;
+        }
+        if (stop6 == 0 && randomizeModules.chooseModule7 == 9)
+        {
+            GameObject clone = Instantiate(prefab, new Vector3(-0.07127906f, 1.372238f, -6.8525f), rotation, parentObject);
+            stop6 = 1;
+        }
+        if (stop7 == 0 && randomizeModules.chooseModule8 == 9)
+        {
+            GameObject clone = Instantiate(prefab, new Vector3(0.05622103f, 1.372238f, -6.8525f), rotation, parentObject);
+            stop7 = 1;
+        }
+        if (stop8 == 0 && randomizeModules.chooseModule9 == 9)
+        {
+            GameObject clone = Instantiate(prefab, new Vector3(0.1862212f, 1.372238f, -6.8525f), rotation, parentObject);
+            stop8 = 1;
         }
     }
 }
