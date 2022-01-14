@@ -72,7 +72,12 @@ public class switchCamera : MonoBehaviour {
             destroyClones();
             SteamVR_LoadLevel.Begin("Win");
         }
-
+        if (mistakes.mistakeNum >= 3) //death scene for all scenes
+        {
+            countdown.mainTimer = 200;
+            destroyClones();
+            SteamVR_LoadLevel.Begin("Lose");
+        }
         if (sceneName == "Keep Talking Nobody Explodes hard" && modulesSolved >= 8)
         {
             countdown.mainTimer = 100;
