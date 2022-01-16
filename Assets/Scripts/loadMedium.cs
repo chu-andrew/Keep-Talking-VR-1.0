@@ -23,10 +23,11 @@ namespace VRTK
         public override void StartUsing(VRTK_InteractUse currentUsingObject = null)
         {
             base.StartUsing(currentUsingObject);
-            SteamVR_LoadLevel.Begin("Keep Talking Nobody Explodes medium");
+            SteamVR_LoadLevel.Begin("Keep Talking Nobody Explodes medium"); //when pressing yellow cube, load medium
             if(!pressed)
             {
-                marker.Write(this.name + " pressed at ");
+                marker.Write("3 min test" + " starts");
+                Debug.Log("medium begin");
                 pressed = true;
             }
         }

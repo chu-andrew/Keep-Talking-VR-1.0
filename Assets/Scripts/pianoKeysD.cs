@@ -34,7 +34,7 @@ namespace VRTK.Examples
             {
                 Controller.GetComponent<pianokeyscontroller>().interrupted = true;
                 press = true;
-                marker.Write("piano key D pressed");
+                //marker.Write("piano key D pressed");
                 //transform.Translate(Time.deltaTime, 0, 0);
                 SoundManagerScript.PlaySound("DPlayed");
                 pressedInInstant = false;

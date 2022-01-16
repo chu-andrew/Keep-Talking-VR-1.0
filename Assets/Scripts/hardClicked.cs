@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class hardClicked : MonoBehaviour {
 
     public Button hardButton;
-    public GameObject hideButton;
     public switchCamera switchC;
+    public GameObject hideButton;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         Button btn = hardButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         if (switchCamera.difficulty != 0)
         {
             hideButton.SetActive(false);

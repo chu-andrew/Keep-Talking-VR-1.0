@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic; //basic C# libraries. includes lists, arrays etc.
 using UnityEngine; // includes unity specific functions
 using VRTK.Examples; // including vrtk library
+using Assets.LSL4Unity.Scripts;
 
 public class pianokeyscontroller : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class pianokeyscontroller : MonoBehaviour
     public int numKeysPressed = 0;
     public string[] keyOrder;
     public bool interrupted = false;
+    private LSLMarkerStream marker;
 
     //these gameobjects are assigned to the keypad cubes in the game editor, in order for script to recognize if keypad is pressed or not
     public GameObject C;
@@ -72,6 +74,7 @@ public class pianokeyscontroller : MonoBehaviour
     {
         //sets the integer used to pick the list to a random number between 1 and 6 
         //picks the list with the corresponding images
+        marker = FindObjectOfType<LSLMarkerStream>();
         pickImage(UnityEngine.Random.Range(1, 5));
         foreach (string x in keyOrder)
         {
@@ -93,6 +96,7 @@ public class pianokeyscontroller : MonoBehaviour
                     pressed[numKeysPressed] = true;
                     numKeysPressed++;
                     Debug.Log("pressed a correctly");
+                    marker.Write("pressed a correctly");
                 }
                 else
                 {
@@ -103,6 +107,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed a incorrectly");
+                    marker.Write("pressed a incorrectly");
                 }
             }
 
@@ -116,6 +121,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed asharp correctly");
+                    marker.Write("pressed asharp correctly");
                 }
                 else
                 {
@@ -127,6 +133,7 @@ public class pianokeyscontroller : MonoBehaviour
                     mistakes.mistakeNum++;
 
                     Debug.Log("pressed asharp incorrectly");
+                    marker.Write("pressed asharp incorrectly");
                 }
             }
 
@@ -140,6 +147,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed b correctly");
+                    marker.Write("pressed b correctly");
                 }
                 else
                 {
@@ -151,6 +159,7 @@ public class pianokeyscontroller : MonoBehaviour
                     mistakes.mistakeNum++;
                     
                     Debug.Log("pressed b incorrectly");
+                    marker.Write("pressed b incorrectly");
                 }
             }
 
@@ -163,6 +172,7 @@ public class pianokeyscontroller : MonoBehaviour
                     pressed[numKeysPressed] = true;
                     numKeysPressed++;
                     Debug.Log("pressed c correctly");
+                    marker.Write("pressed c correctly");
                 }
                 else
                 {
@@ -173,6 +183,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed c incorrectly");
+                    marker.Write("pressed c incorrectly");
                 }
             }
 
@@ -186,6 +197,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed csharp correctly");
+                    marker.Write("pressed csharp correctly");
                 }
                 else
                 {
@@ -196,6 +208,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed csharp incorrectly");
+                    marker.Write("pressed csharp incorrectly");
                 }
             }
 
@@ -209,6 +222,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed d correctly");
+                    marker.Write("pressed d correctly");
                 }
                 else
                 {
@@ -219,6 +233,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed d incorrectly");
+                    marker.Write("pressed d incorrectly");
                 }
             }
 
@@ -232,6 +247,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed dsharp correctly");
+                    marker.Write("pressed dsharp correctly");
                 }
                 else
                 {
@@ -242,6 +258,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed dsharp incorrectly");
+                    marker.Write("pressed dsharp incorrectly");
                 }
             }
 
@@ -255,6 +272,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed e correctly");
+                    marker.Write("pressed e correctly");
                 }
                 else
                 {
@@ -265,6 +283,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed e incorrectly");
+                    marker.Write("pressed e incorrectly");
                 }
             }
 
@@ -278,6 +297,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed f correctly");
+                    marker.Write("pressed f correctly");
                 }
                 else
                 {
@@ -288,6 +308,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed f incorrectly");
+                    marker.Write("pressed f incorrectly");
                 }
             }
 
@@ -301,6 +322,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed fsharp correctly");
+                    marker.Write("pressed fsharp correctly");
                 }
                 else
                 {
@@ -311,6 +333,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed fsharp incorrectly");
+                    marker.Write("pressed fsharp incorrectly");
                 }
             }
 
@@ -324,6 +347,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed g correctly");
+                    marker.Write("pressed g correctly");
                 }
                 else
                 {
@@ -334,6 +358,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed g incorrectly");
+                    marker.Write("pressed g incorrectly");
                 }
             }
 
@@ -347,6 +372,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed++;
 
                     Debug.Log("pressed gsharp correctly");
+                    marker.Write("pressed gsharp correctly");
                 }
                 else
                 {
@@ -357,6 +383,7 @@ public class pianokeyscontroller : MonoBehaviour
                     numKeysPressed = 0;
                     mistakes.mistakeNum++;
                     Debug.Log("pressed gsharp incorrectly");
+                    marker.Write("pressed gsharp incorrectly");
                 }
             }
 
