@@ -62,18 +62,21 @@ public class switchCamera : MonoBehaviour {
     {
         if (sceneName == "Keep Talking Nobody Explodes easy" && modulesSolved >= 4)
         {
+            marker.Write("easy ends");
             countdown.mainTimer = 300;
             destroyClones();
             SteamVR_LoadLevel.Begin("Win");
         }
         if (sceneName == "Keep Talking Nobody Explodes medium" && modulesSolved >= 6)
         {
+            marker.Write("medium ends");
             countdown.mainTimer = 200;
             destroyClones();
             SteamVR_LoadLevel.Begin("Win");
         }
         if (sceneName == "Keep Talking Nobody Explodes hard" && modulesSolved >= 8)
         {
+            marker.Write("hard ends");
             countdown.mainTimer = 10;
             ventingcountdown.mainVentTimer = 60.0f;
             ventingwarning.delay = true;
@@ -102,7 +105,7 @@ public class switchCamera : MonoBehaviour {
             {
                 explosion.Play();
             }
-            marker.Write("2 min test (easy) ends");
+            marker.Write("easy ends");
             Debug.Log("easy game ends");
             countdown.mainTimer = 10;
             destroyClones();
@@ -114,7 +117,7 @@ public class switchCamera : MonoBehaviour {
             {
                 explosion.Play();
             }
-            marker.Write("3 min test (medium) ends");
+            marker.Write("medium ends");
             Debug.Log("medium game ends");
             countdown.mainTimer = 10;
             destroyClones();
@@ -126,7 +129,7 @@ public class switchCamera : MonoBehaviour {
             {
                 explosion.Play();
             }
-            marker.Write("2 min test (hard) ends");
+            marker.Write("hard ends");
             Debug.Log("hard game ends");
             countdown.mainTimer = 10;
             destroyClones();

@@ -19,15 +19,15 @@ public class countdown : MonoBehaviour {
         {
             if(switchCamera.difficulty == 1)
             {
-                mainTimer = 10;
+                mainTimer = 180;
             }
             if (switchCamera.difficulty == 2)
             {
-                mainTimer = 10;
+                mainTimer = 120;
             }
             if (switchCamera.difficulty == 3)
             {
-                mainTimer = 10;
+                mainTimer = 60;
             }
             if(switchCamera.difficulty == 4)
             {

@@ -26,7 +26,7 @@ namespace VRTK
             SteamVR_LoadLevel.Begin("Keep Talking Nobody Explodes hard"); //when pressing red cube, load hard
             if (!pressed)
             {
-                marker.Write("2 min test" + " starts");
+                marker.Write("hard starts");
                 Debug.Log("hard begin");
                 pressed = true;
             }

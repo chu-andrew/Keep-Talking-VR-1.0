@@ -62,39 +62,39 @@ public class randomizeModules : MonoBehaviour {
 
                 if (i1 == 1 || i2 == 1 || i3 == 1 || i4 == 1)
                 {                   
-                    chooseModule1 = Random.Range(1, 9);
+                    chooseModule1 = Random.Range(1, 7);
                 }
                 if (i1 == 2 || i2 == 2 || i3 == 2 || i4 == 2)
                 {
-                    chooseModule2 = Random.Range(1, 9);
+                    chooseModule2 = Random.Range(1, 7);
                 }
                 if (i1 == 3 || i2 == 3 || i3 == 3 || i4 == 3)
                 {
-                    chooseModule3 = Random.Range(1, 9); 
+                    chooseModule3 = Random.Range(1, 7); 
                 }
                 if (i1 == 4 || i2 == 4 || i3 == 4 || i4 == 4)
                 {
-                    chooseModule4 = Random.Range(1, 9);   
+                    chooseModule4 = Random.Range(1, 7);   
                 }
                 if (i1 == 5 || i2 == 5 || i3 == 5 || i4 == 5)
                 {
-                    chooseModule5 = Random.Range(1, 9);
+                    chooseModule5 = Random.Range(1, 7);
                 }
                 if (i1 == 6 || i2 == 6 || i3 == 6 || i4 == 6)
                 {
-                    chooseModule6 = Random.Range(1, 9);
+                    chooseModule6 = Random.Range(1, 7);
                 }
                 if (i1 == 7 || i2 == 7 || i3 == 7 || i4 == 7)
                 {
-                    chooseModule7 = Random.Range(1, 9);
+                    chooseModule7 = Random.Range(1, 7);
                 }
                 if (i1 == 8 || i2 == 8 || i3 == 8 || i4 == 8)
                 {
-                    chooseModule8 = Random.Range(1, 9);
+                    chooseModule8 = Random.Range(1, 7);
                 }
                 if (i1 == 9 || i2 == 9 || i3 == 9 || i4 == 9)
                 {
-                    chooseModule9 = Random.Range(1, 9);
+                    chooseModule9 = Random.Range(1, 7);
                 }
                 /*
                 Debug.Log(chooseModule1);
@@ -127,82 +127,82 @@ public class randomizeModules : MonoBehaviour {
                 }
                 if (i1 == 1 || i2 == 1 || i3 == 1 || i4 == 1 || i5 == 1 || i6 == 1)
                 {  
-                    chooseModule1 = Random.Range(1, 10);
+                    chooseModule1 = Random.Range(1, 8);
                 }
                 if (i1 == 2 || i2 == 2 || i3 == 2 || i4 == 2 || i5 == 2 || i6 == 2)
                 {
-                    chooseModule2 = Random.Range(1, 10);
+                    chooseModule2 = Random.Range(1, 8);
                 }
                 if (i1 == 3 || i2 == 3 || i3 == 3 || i4 == 3 || i5 == 3 || i6 == 3)
                 {
-                    chooseModule3 = Random.Range(1, 10);
+                    chooseModule3 = Random.Range(1, 8);
                 }
                 if (i1 == 4 || i2 == 4 || i3 == 4 || i4 == 4 || i5 == 4 || i6 == 4)
                 {
-                    chooseModule4 = Random.Range(1, 10);
+                    chooseModule4 = Random.Range(1, 8);
                 }
                 if (i1 == 5 || i2 == 5 || i3 == 5 || i4 == 5 || i5 == 5 || i6 == 5)
                 {
-                    chooseModule5 = Random.Range(1, 10);
+                    chooseModule5 = Random.Range(1, 8);
                 }
                 if (i1 == 6 || i2 == 6 || i3 == 6 || i4 == 6 || i5 == 6 || i6 == 6)
                 {
-                    chooseModule6 = Random.Range(1, 10);
+                    chooseModule6 = Random.Range(1, 8);
                 }
                 if (i1 == 7 || i2 == 7 || i3 == 7 || i4 == 7 || i5 == 7 || i6 == 7)
                 {
-                    chooseModule7 = Random.Range(1, 10);
+                    chooseModule7 = Random.Range(1, 8);
                 }
                 if (i1 == 8 || i2 == 8 || i3 == 8 || i4 == 8 || i5 == 8 || i6 == 8)
                 {
-                    chooseModule8 = Random.Range(1, 10);
+                    chooseModule8 = Random.Range(1, 8);
                 }
                 if (i1 == 9 || i2 == 9 || i3 == 9 || i4 == 9 || i5 == 9 || i6 == 9)
                 {
-                    chooseModule9 = Random.Range(1, 10);
+                    chooseModule9 = Random.Range(1, 8);
                 }
             }
             if (switchCamera.difficulty == 3)
             {
 
-                chooseModule1 = Random.Range(1, 8);
-                chooseModule2 = Random.Range(1, 8);
-                chooseModule3 = Random.Range(1, 8);
-                chooseModule4 = Random.Range(1, 8);
-                chooseModule5 = Random.Range(1, 8);
-                chooseModule6 = Random.Range(1, 8);
-                chooseModule7 = Random.Range(1, 8);
-                chooseModule8 = Random.Range(1, 8);
-                chooseModule9 = Random.Range(1, 8);
+                chooseModule1 = Random.Range(1, 10);
+                chooseModule2 = Random.Range(1, 10);
+                chooseModule3 = Random.Range(1, 10);
+                chooseModule4 = Random.Range(1, 10);
+                chooseModule5 = Random.Range(1, 10);
+                chooseModule6 = Random.Range(1, 10);
+                chooseModule7 = Random.Range(1, 10);
+                chooseModule8 = Random.Range(1, 10);
+                chooseModule9 = Random.Range(1, 10);
                 int random2 = Random.Range(1, 10);                
                 switch (random2)
                 {
                     case 1:
-                        chooseModule1 = 9;
+                        chooseModule1 = 10;
                         break;
                     case 2:
-                        chooseModule2 = 9;
+                        chooseModule2 = 10;
                         break;
                     case 3:
-                        chooseModule3 = 9;
+                        chooseModule3 = 10;
                         break;
                     case 4:
-                        chooseModule4 = 9;
+                        chooseModule4 = 10;
                         break;
                     case 5:
-                        chooseModule5 = 9;
+                        chooseModule5 = 10;
                         break;
                     case 6:
-                        chooseModule6 = 9;
+                        chooseModule6 = 10;
                         break;
                     case 7:
-                        chooseModule7 = 9;
+                        chooseModule7 = 10;
                         break;
                     case 8:
-                        chooseModule8 = 9;
+                        chooseModule8 = 10;
                         break;
                     case 9:
-                        chooseModule9 = 9;
+                        chooseModule9 = 10;
                         break;
                 }
                 Debug.Log(chooseModule1);

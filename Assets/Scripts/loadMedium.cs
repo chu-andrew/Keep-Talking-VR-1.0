@@ -26,7 +26,7 @@ namespace VRTK
             SteamVR_LoadLevel.Begin("Keep Talking Nobody Explodes medium"); //when pressing yellow cube, load medium
             if(!pressed)
             {
-                marker.Write("3 min test" + " starts");
+                marker.Write("medium starts");
                 Debug.Log("medium begin");
                 pressed = true;
             }

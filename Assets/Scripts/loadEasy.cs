@@ -26,7 +26,7 @@ namespace VRTK
             SteamVR_LoadLevel.Begin("Keep Talking Nobody Explodes easy"); //when pressing green cube, load easy
             if(!pressed)
             {
-                marker.Write("4 min test" + " starts");
+                marker.Write("easy starts");
                 Debug.Log("easy begin");
                 pressed = true;
             }
